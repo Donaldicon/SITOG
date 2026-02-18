@@ -103,7 +103,7 @@ const HeroM = () => {
                     {slide.button}
                 </span>
                 <div 
-                className="text-[#FDCF17] bg-black h-[12px] w-[12px]  rounded-full flex items-center justify-center text-[7px] mt-[2px]">
+                className="text-[#FDCF17] bg-black h-[12px] w-[12px]  rounded-full flex items-center justify-center text-[7px] mt-[1px]">
                   <FontAwesomeIcon icon={faChevronRight} />
                 </div>
               </button>
@@ -113,7 +113,7 @@ const HeroM = () => {
       </div>
 
       <div 
-      className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-[8px]">
+      className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-[5px] bg-[#47464a] px-3 py-1 rounded-full">
         {images.map((_, i) => (
           <button
             key={i}
@@ -121,7 +121,7 @@ const HeroM = () => {
             className={`h-2 w-2 rounded-full transition-all duration-300 ${
               activeIndex === i
                 ? "bg-[#FDCF17] scale-110 w-6"
-                : "bg-white/60 hover:bg-white"
+                : "bg-[#DBDCDF] hover:bg-white"
             }`}
           />
         ))}
