@@ -66,7 +66,7 @@ const HeroM = () => {
 
   return (
     <div 
-    className="overflow-hidden md:hidden w-full h-[500px] relative">
+    className="overflow-hidden md:hidden w-full rounded-3xl h-[500px] relative">
       
       <div
         className={`flex ${

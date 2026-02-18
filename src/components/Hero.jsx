@@ -64,7 +64,7 @@ const Hero = () => {
 
   return (
     <div 
-      className="overflow-hidden hidden md:block w-full md:h-[350px] laptop:h-[450px]  big:h-[600px] relative">
+      className="overflow-hidden hidden md:block w-full md:h-[350px] laptop:h-[450px] rounded-3xl big:h-[600px] relative">
       <div
         className={`flex ${
           transition ? "transition-transform duration-1000 ease-in-out" : ""
