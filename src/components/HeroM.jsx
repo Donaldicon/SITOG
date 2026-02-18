@@ -65,7 +65,8 @@ const HeroM = () => {
   }, [index]);
 
   return (
-    <div className="overflow-hidden md:hidden w-full h-[500px] relative">
+    <div 
+    className="overflow-hidden md:hidden w-full h-[500px] relative">
       
       <div
         className={`flex ${
@@ -84,18 +85,25 @@ const HeroM = () => {
               className="w-full h-[500px] object-cover rounded-3xl"
             />
 
-            <div className="w-[95%] absolute top-1/2 left-[2.5%]  -translate-y-1/2 bg-[#dddfe0]/90 px-[3%] py-[8%] rounded-lg shadow-lg">
-              <h1 className="font-bold mb-4 text-[25px] leading-[35px] text-[#3A3B40] font-halyard">
+            <div 
+            className="w-[95%] absolute top-1/2 left-[2.5%]  -translate-y-1/2 bg-[#dddfe0]/90 px-[3%] py-[8%] rounded-lg shadow-lg">
+              <h1 
+              className="font-bold mb-4 text-[25px] leading-[35px] text-[#3A3B40] font-halyard">
                 {slide.header}
               </h1>
 
-              <p className="mb-4 text-[12px] text-[#4C4E54] font-hind font-medium text-left">
+              <p 
+              className="mb-4 text-[12px] text-[#4C4E54] font-hind font-medium text-left">
                 {slide.text}
               </p>
 
-              <button className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard font-medium space-x-[4px] py-[5px]  px-[8px]  rounded-md text-[11px] flex items-center ">
-                <span>{slide.button}</span>
-                <div className="text-[#FDCF17] bg-black h-[12px] w-[12px]  rounded-full flex items-center justify-center text-[7px] mt-[2px]">
+              <button 
+              className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard font-medium space-x-[4px] py-[5px]  px-[8px]  rounded-md text-[11px] flex items-center ">
+                <span>
+                    {slide.button}
+                </span>
+                <div 
+                className="text-[#FDCF17] bg-black h-[12px] w-[12px]  rounded-full flex items-center justify-center text-[7px] mt-[2px]">
                   <FontAwesomeIcon icon={faChevronRight} />
                 </div>
               </button>
@@ -104,7 +112,8 @@ const HeroM = () => {
         ))}
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-[8px]">
+      <div 
+      className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-[8px]">
         {images.map((_, i) => (
           <button
             key={i}

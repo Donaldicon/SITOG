@@ -63,7 +63,8 @@ const Hero = () => {
   }, [index]);
 
   return (
-    <div className="overflow-hidden hidden md:block w-full md:h-[350px] laptop:h-[450px]  big:h-[600px] relative">
+    <div 
+      className="overflow-hidden hidden md:block w-full md:h-[350px] laptop:h-[450px]  big:h-[600px] relative">
       <div
         className={`flex ${
           transition ? "transition-transform duration-1000 ease-in-out" : ""
@@ -81,16 +82,21 @@ const Hero = () => {
               className="w-full md:h-[350px] laptop:h-[450px] big:h-[600px]  object-cover rounded-3xl"
             />
 
-            <div className="w-[43%] absolute top-1/2 left-[5%] -translate-y-1/2 bg-[#dddfe0]/90 px-[3%] py-[4%] rounded-lg shadow-lg">
-              <h1 className=" font-bold mb-4 md:text-[20px] lg:text-[26px] md:leading-[25px] laptop:leading-[40px] laptop:text-[33px] big:text-[40px] big:leading-[50px] text-[#3A3B40] font-halyard">
+            <div 
+            className="w-[43%] absolute top-1/2 left-[5%] -translate-y-1/2 bg-[#dddfe0]/90 px-[3%] py-[4%] rounded-lg shadow-lg">
+              <h1 
+              className=" font-bold mb-4 md:text-[20px] lg:text-[26px] md:leading-[25px] laptop:leading-[40px] laptop:text-[33px] big:text-[40px] big:leading-[50px] text-[#3A3B40] font-halyard">
                 {slide.header}
               </h1>
-              <p className="mb-4 md:text-[10px] lg:text-[12px] laptop:text-[15px] big:text-[20px] text-[#4C4E54] font-hind font-medium text-left">
+              <p 
+              className="mb-4 md:text-[10px] lg:text-[12px] laptop:text-[15px] big:text-[20px] text-[#4C4E54] font-hind font-medium text-left">
                 {slide.text}
               </p>
-            <button className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] hover:bg-transparent transition-all duration-500 ease-in-out font-halyard font-medium space-x-[3px] laptop:space-x-[5px] py-[5px] laptop:py-[8px] px-[8px] laptop:px-[10px] big:py-[12px] big:px-[13px] rounded-md md:text-[8px] lg:text-[10px] laptop:text-[13px] flex items-center justify-start big:text-[20px]">
+            <button 
+            className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] hover:bg-transparent transition-all duration-500 ease-in-out font-halyard font-medium space-x-[3px] laptop:space-x-[5px] py-[5px] laptop:py-[8px] px-[8px] laptop:px-[10px] big:py-[12px] big:px-[13px] rounded-md md:text-[8px] lg:text-[10px] laptop:text-[13px] flex items-center justify-start big:text-[20px]">
                 <span>{slide.button}</span>
-                <div className=" text-[#FDCF17] bg-black  h-[10px] w-[10px] lg:w-[13px] lg:h-[13px] laptop:w-[16px] laptop:h-[16px] big:h-[20px] big:w-[20px] rounded-full flex items-center justify-center md:text-[5px] lg:text-[6px] laptop:text-[7px] big:text-[10px] mt-[2px] laptop:mt-[1px] big:mt-[3px]">
+                <div 
+                className=" text-[#FDCF17] bg-black  h-[10px] w-[10px] lg:w-[13px] lg:h-[13px] laptop:w-[16px] laptop:h-[16px] big:h-[20px] big:w-[20px] rounded-full flex items-center justify-center md:text-[5px] lg:text-[6px] laptop:text-[7px] big:text-[10px] mt-[2px] laptop:mt-[1px] big:mt-[3px]">
                     <FontAwesomeIcon icon={faChevronRight}/>
                 </div>
             </button>
