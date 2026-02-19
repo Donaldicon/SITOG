@@ -6,7 +6,7 @@ import whoWeAre from '../assets/whoweare/who-we-are.png'
 import WhoWeAreM from "./WhoWeAreM";
 
 import { motion, easeInOut } from "motion/react";
-
+ 
 const WhoWeAre = () => {
   return (
     <section>
@@ -67,7 +67,7 @@ const WhoWeAre = () => {
             >
                 <img 
                 src={whoWeAre} alt="Who we are SITOG image" 
-                className="rounded-3xl md:mt-3 lg:mt-4 laptop:mt-5 big:mt-8 object-cover"/>
+                className="rounded-3xl md:mt-3 lg:mt-4 laptop:mt-5 big:mt-8 object-cover w-full"/>
             </motion.div>
         </div>
     </div>
