@@ -11,7 +11,7 @@ const WhoWeAre = () => {
   return (
     <section>
     <div 
-    className='mt-6 laptop:mt-8 big:mt-11 hidden md:flex  items-start justify-between rounded-3xl shadow-lg font-hind bg-white py-5 laptop:py-7 big:py-10 px-[3%]'>
+    className='mt-5 laptop:mt-7 big:mt-10 hidden md:flex  items-start justify-between rounded-3xl shadow-lg font-hind bg-white py-5 laptop:py-7 big:py-10 px-[3%]'>
 
         {/* left */}
         <div 
