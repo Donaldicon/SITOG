@@ -8,7 +8,7 @@ import { motion, easeInOut } from "motion/react";
 const WhoWeAreM = () => {
   return (
     <section 
-    className='mt-6 md:hidden flex flex-col items-start rounded-3xl shadow-lg font-hind bg-white py-3 px-[4%]'>
+    className='mt-6 md:hidden overflow-hidden flex flex-col items-start rounded-3xl shadow-lg font-hind bg-white py-3 px-[4%]'>
 
       
         <div 
