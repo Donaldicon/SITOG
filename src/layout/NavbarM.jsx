@@ -58,7 +58,7 @@ const NavbarM = () => {
       : 'h-[122px]' } `}  > </div>
     
       <div 
-      className={`fixed  z-[100] w-[93%] big:w-[72%] left-1/2 -translate-x-1/2 flex items-center justify-between text-[13px] py-3 px-[4%] bg-white transition-all border-transparent duration-500 top-[20px] ${
+      className={`fixed  z-[100] w-[92%] big:w-[72%] left-1/2 -translate-x-1/2 flex items-center justify-between text-[13px] py-3 px-[1%] bg-white transition-all border-transparent duration-500 top-[20px] ${
         isOpen ? 'rounded-t-2xl' : 'rounded-2xl'
       }
     ${

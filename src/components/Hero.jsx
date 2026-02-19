@@ -64,7 +64,7 @@ const Hero = () => {
 
   return (
     <div 
-      className="overflow-hidden hidden md:block w-full md:h-[350px] laptop:h-[450px] rounded-3xl big:h-[600px] relative">
+      className="overflow-hidden hidden md:block w-full md:h-[350px] laptop:h-[450px] xl:h-[580px] rounded-3xl big:h-[700px] relative">
       <div
         className={`flex ${
           transition ? "transition-transform duration-1000 ease-in-out" : ""
@@ -74,18 +74,18 @@ const Hero = () => {
         {slides.map((slide, i) => (
           <div
             key={i}
-            className="w-full md:h-[350px] laptop:h-[450px] big:h-[600px] flex-shrink-0  relative"
+            className="w-full md:h-[350px] laptop:h-[450px] xl:h-[580px] big:h-[700px] flex-shrink-0  relative"
           >
             <img
               src={slide.img}
               alt="slide"
-              className="w-full md:h-[350px] laptop:h-[450px] big:h-[600px]  object-cover rounded-3xl"
+              className="w-full md:h-[350px] laptop:h-[450px] xl:h-[580px] big:h-[700px]  object-cover rounded-3xl"
             />
 
             <div 
-            className="w-[43%] absolute top-1/2 left-[5%] -translate-y-1/2 bg-[#dddfe0]/90 px-[3%] py-[4%] rounded-lg shadow-lg">
+            className="w-[43%] absolute top-1/2 left-[3%] -translate-y-1/2 bg-[#dddfe0]/90 px-[2%] py-[4%] rounded-lg shadow-lg">
               <h1 
-              className=" font-bold mb-4 md:text-[20px] lg:text-[26px] md:leading-[25px] laptop:leading-[40px] laptop:text-[33px] big:text-[40px] big:leading-[50px] text-[#3A3B40] font-halyard">
+              className=" font-bold mb-4 md:text-[20px] lg:text-[26px] md:leading-[25px] lg:leading-[33px] laptop:leading-[40px] laptop:text-[33px] big:text-[40px] big:leading-[50px] text-[#3A3B40] font-halyard">
                 {slide.header}
               </h1>
               <p 
