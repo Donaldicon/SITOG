@@ -43,7 +43,7 @@ const WhoWeAreM = () => {
             viewport={{once:true}}
             >
                 <p 
-                className='my-4 text-[12px]'>At SITOG, quality, transparency, and customer satisfaction drive everything we do. We are committed to building long-term partnerships through integrity, technical excellence, innovation, and safety, ensuring every project meets international standards and delivers measurable value.</p>
+                className='my-4 text-[12px] text-[#4C4E54]'>At SITOG, quality, transparency, and customer satisfaction drive everything we do. We are committed to building long-term partnerships through integrity, technical excellence, innovation, and safety, ensuring every project meets international standards and delivers measurable value.</p>
             </motion.div>
 
             <motion.div 

@@ -1,6 +1,8 @@
 import Hero from "../components/Hero"
 import HeroM from "../components/HeroM"
 import WhoWeAre from "../components/WhoWeAre"
+import OurClients from "../components/OurClients"
+import OurServices from "../components/OurServices"
 
 const Home = () => {
   return (
@@ -8,6 +10,8 @@ const Home = () => {
     <Hero />
     <HeroM />
     <WhoWeAre />
+    <OurClients />
+    <OurServices />
   </div>
   )
 }

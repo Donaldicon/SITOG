@@ -23,6 +23,7 @@ module.exports = {
 
     screens: {
       'phone': '420px',
+      'otherPhones': '460px',
       'md': '768px',
       'lg': '1024px',
       'laptop': '1180px',
