@@ -71,7 +71,7 @@ const OurClientsM = () => {
           {slides.map((img, i) => (
             <div
               key={i}
-              className="min-w-[150px] h-[100px] flex-shrink-0 bg-white py-5 rounded-xl shadow-lg"
+              className="w-[150px] h-[100px] flex-shrink-0 bg-white py-5 rounded-xl shadow-lg"
             >
               <img
                 src={img}
