@@ -11,7 +11,7 @@ const WhoWeAre = () => {
   return (
     <section>
     <div 
-    className='mt-5 laptop:mt-7 big:mt-10 hidden md:flex  items-start justify-between rounded-3xl shadow-lg font-hind bg-white py-7 laptop:py-10 big:py-14 px-[3%]'>
+    className='mt-5 laptop:mt-7 big:mt-10 hidden md:flex  items-start justify-between rounded-3xl shadow-lg font-hind bg-white py-7 laptop:py-10 big:py-14 px-[3%] overflow-hidden'>
 
         {/* left */}
         <div 
@@ -30,20 +30,27 @@ const WhoWeAre = () => {
         <div 
         className='flex flex-col justify-end w-[70%]'>
             <motion.div 
-            initial={{opacity:0, x:30}}
+            initial={{opacity:0, x:25}}
             whileInView={{opacity:100, x:0}}
             transition={{duration:2, ease:easeInOut}}
             viewport={{once:true}}
             >
                 <h1 
                 className='text-[#3A3B40] md:text-[18px] lg:text-[24px] md:leading-[24px] lg:leading-[32px] laptop:leading-[40px] laptop:text-[32px] big:text-[38px] big:leading-[50px] font-semibold font-halyard'><span className="text-[#1C631F]">SITOG Global Links Limited </span> is a leading Engineering, Procurement, and Construction (EPC) company delivering innovative, reliable, and sustainable industrial solutions across Nigeria.</h1>
+            </motion.div>
 
+            <motion.div 
+            initial={{opacity:0, x:50}}
+            whileInView={{opacity:100, x:0}}
+            transition={{duration:2, ease:easeInOut}}
+            viewport={{once:true}}
+            >
                 <p 
                 className='md:my-2 lg:my-3 laptop:my-4 big:my-6 md:text-[11px] lg:text-[12px] laptop:text-[16px] big:text-[22px]'>At SITOG, quality, transparency, and customer satisfaction drive everything we do. We are committed to building long-term partnerships through integrity, technical excellence, innovation, and safety, ensuring every project meets international standards and delivers measurable value.</p>
             </motion.div> 
 
             <motion.div 
-            initial={{opacity:0, x:35}}
+            initial={{opacity:0, x:70}}
             whileInView={{opacity:100, x:0}}
             transition={{duration:2, ease:easeInOut}}
             viewport={{once:true}}
@@ -60,7 +67,7 @@ const WhoWeAre = () => {
             
 
             <motion.div 
-            initial={{opacity:0, x:40}}
+            initial={{opacity:0, x:100}}
             whileInView={{opacity:100, x:0}}
             transition={{duration:2, ease:easeInOut}}
             viewport={{once:true}}
