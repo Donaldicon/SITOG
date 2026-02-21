@@ -2,6 +2,7 @@
 import cOne from '../assets/ourclients/C1.png'
 import cTwo from '../assets/ourclients/C2.png'
 import cThree from '../assets/ourclients/C3.png'
+import cThree2 from '../assets/ourclients/C32.png'
 import cFour from '../assets/ourclients/C4.png'
 import cFive from '../assets/ourclients/C5.png'
 import cSix from '../assets/ourclients/C6.png'
@@ -15,7 +16,22 @@ const OurClientsM = () => {
   const containerRef = useRef(null);
 
   const images = [
-    cOne, cTwo, cThree, cFour, cFive, cSix, cSeven
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
+    { src: cOne },{src:cThree2}, { src: cTwo }, { src: cFour }, { src: cFive }, { src: cSix },{ src: cSeven },
   ];
 
   const slides = [...images, ...images];
@@ -68,15 +84,15 @@ const OurClientsM = () => {
       >
         <div 
         className="flex gap-6">
-          {slides.map((img, i) => (
+          {slides.map((item, i) => (
             <div
               key={i}
-              className="w-[150px] h-[100px] flex-shrink-0 bg-white py-5 rounded-xl shadow-lg"
+              className={`w-[150px] h-[100px] flex-shrink-0 bg-white py-5 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
             >
               <img
-                src={img}
+                src={item.src}
                 alt={`client-${i}`}
-                className="w-full h-full object-contain"
+                className={`w-full h-full object-contain transition-all ease-in-out duration-500 px-2`}
               />
             </div>
           ))}
