@@ -45,7 +45,7 @@ const ProjectOverview = () => {
                         alt="Installation anfd Commisioning of Process Instruments and Mechanic Systems" 
                         className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[24px] laptop:leading-[27px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl  '>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[22px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl  '>
                             Installation and Commisioning of Process Instruments and Mechanic System
                         </p>
                     </div>
@@ -64,7 +64,7 @@ const ProjectOverview = () => {
                         alt="Supply of Critical Engineering Components for Refinery, Fertilizer, and Food production plants." 
                         className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[24px] laptop:leading-[27px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl '>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[22px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl '>
                             Supply of Critical Engineering Components for Refinery, Fertilizer, and Food production plants.
                         </p>
                     </div>
@@ -89,7 +89,7 @@ const ProjectOverview = () => {
                         alt="Technical Training and Field Workshops for Maintenance Teams" 
                         className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[24px] laptop:leading-[27px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl ]'>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[22px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl ]'>
                             Technical Training and Field Workshops for Maintenance Teams
                         </p>
                     </div>
@@ -108,7 +108,7 @@ const ProjectOverview = () => {
                         alt="Calibration and maintenance of industrial instrumentation." 
                         className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[24px] laptop:leading-[27px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl '>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[18px] lg:leading-[22px] laptop:text-[22px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl '>
                             Calibration and maintenance of industrial instrumentation.
                         </p>
                     </div>
