@@ -3,6 +3,7 @@ import HeroM from "../components/HeroM"
 import WhoWeAre from "../components/WhoWeAre"
 import OurClients from "../components/OurClients"
 import OurServices from "../components/OurServices"
+import ProjectOverview from "../components/ProjectOverview"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
     <WhoWeAre />
     <OurClients />
     <OurServices />
+    <ProjectOverview />
   </div>
   )
 }

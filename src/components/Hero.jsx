@@ -93,7 +93,7 @@ const Hero = () => {
                 {slide.text}
               </p>
             <button 
-            className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] hover:bg-transparent transition-all duration-500 ease-in-out font-halyard font-medium space-x-[3px] laptop:space-x-[5px] py-[5px] laptop:py-[8px] px-[8px] laptop:px-[10px] big:py-[12px] big:px-[13px] rounded-md md:text-[8px] lg:text-[10px] laptop:text-[13px] flex items-center justify-start big:text-[20px]">
+            className="bg-[#FDCF17] text-[#3A3B40]  hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard font-medium space-x-[3px] laptop:space-x-[5px] py-[5px] laptop:py-[8px] px-[8px] laptop:px-[10px] big:py-[12px] big:px-[13px] rounded-md md:text-[8px] lg:text-[10px] laptop:text-[13px] flex items-center justify-start big:text-[20px]">
                 <span>{slide.button}</span>
                 <div 
                 className=" text-[#FDCF17] bg-black  h-[10px] w-[10px] lg:w-[13px] lg:h-[13px] laptop:w-[16px] laptop:h-[16px] big:h-[20px] big:w-[20px] rounded-full flex items-center justify-center md:text-[5px] lg:text-[6px] laptop:text-[7px] big:text-[10px] mt-[2px] laptop:mt-[1px] big:mt-[3px]">

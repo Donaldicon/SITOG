@@ -1,7 +1,6 @@
 
 import cOne from '../assets/ourclients/C1.png'
-import cTwo from '../assets/ourclients/C2.png'
-import cThree from '../assets/ourclients/C3.png'
+import cTwo from '../assets/ourclients/C22.png'
 import cThree2 from '../assets/ourclients/C32.png'
 import cFour from '../assets/ourclients/C4.png'
 import cFive from '../assets/ourclients/C5.png'
@@ -80,14 +79,14 @@ const OurClientsM = () => {
 
       <div
       ref={containerRef}
-      className="overflow-hidden whitespace-nowrap mt-8 pb-4"
+      className="overflow-hidden whitespace-nowrap mt-8 pb-2"
       >
         <div 
         className="flex gap-6">
           {slides.map((item, i) => (
             <div
               key={i}
-              className={`w-[150px] h-[100px] flex-shrink-0 bg-white py-5 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
+              className={`w-[150px] h-[100px] flex-shrink-0 bg-white py-2 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
             >
               <img
                 src={item.src}

@@ -68,7 +68,7 @@ const OurServicesM = () => {
       }, [index]);
   return (
     <div 
-    className='md:hidden bg-white px-[4%] py-3 overflow-hidden'>
+    className='md:hidden bg-white px-[4%] py-3 overflow-hidden rounded-3xl'>
         <p 
         className="bg-[#F0F1F3] text-[#63646C] text-[10px] rounded-lg py-2 px-3 w-fit">
             Our Services
