@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons/faChevronRight'
 
-import OS1 from '../assets/ourservices/OS1.png'
-import OS2 from '../assets/ourservices/OS2.png'
-import OS3 from '../assets/ourservices/OS3.png'
+import OS1 from '../../assets/home/ourservices/OS1.png'
+import OS2 from '../../assets/home/ourservices/OS2.png'
+import OS3 from '../../assets/home/ourservices/OS3.png'
 
 import { motion, easeInOut } from 'motion/react'
 
@@ -68,7 +68,7 @@ const OurServicesM = () => {
       }, [index]);
   return (
     <div 
-    className='md:hidden bg-white px-[4%] py-3 overflow-hidden rounded-3xl'>
+    className='md:hidden bg-white px-[4%] py-3 overflow-hidden rounded-md shadow-sm'>
         <p 
         className="bg-[#F0F1F3] text-[#63646C] text-[10px] rounded-lg py-2 px-3 w-fit">
             Our Services
@@ -129,7 +129,7 @@ const OurServicesM = () => {
                     <img
                       src={slide.img}
                       alt="slide"
-                      className="w-full h-[400px] otherPhones:h-[500px] object-cover rounded-xl"
+                      className="w-full h-[400px] otherPhones:h-[500px] object-cover rounded-md"
                     />
         
                     <div 

@@ -1,10 +1,10 @@
-import Hero from "../components/Hero"
-import HeroM from "../components/HeroM"
-import WhoWeAre from "../components/WhoWeAre"
-import OurClients from "../components/OurClients"
-import OurServices from "../components/OurServices"
-import ProjectOverview from "../components/ProjectOverview"
-import ProjectNeeds from "../components/ProjectNeeds"
+import Hero from "../components/home/Hero"
+import HeroM from "../components/home/HeroM"
+import WhoWeAre from "../components/home/WhoWeAre"
+import OurClients from "../components/home/OurClients"
+import OurServices from "../components/home/OurServices"
+import ProjectOverview from "../components/home/ProjectOverview"
+import ProjectNeeds from "../components/home/ProjectNeeds"
 
 const Home = () => {
   return (

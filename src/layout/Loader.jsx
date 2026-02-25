@@ -1,4 +1,4 @@
-import loader from '../assets/loader/Loader.png'
+import loader from '../assets/home/loader/Loader.png'
 
 
 const Loader = () => {

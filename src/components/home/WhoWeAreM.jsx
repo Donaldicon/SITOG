@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 
-import whoWeAre from '../assets/whoweare/who-we-are.png'
+import whoWeAre from '../../assets/home/whoweare/who-we-are.png'
 
 import { motion, easeInOut } from "motion/react";
 
 const WhoWeAreM = () => {
   return (
     <section 
-    className='mt-6 md:hidden overflow-hidden flex flex-col items-start rounded-3xl shadow-lg font-hind bg-white py-3 px-[4%]'>
+    className='mt-6 md:hidden overflow-hidden flex flex-col items-start rounded-md shadow-sm font-hind bg-white py-3 px-[4%]'>
 
       
         <div 
@@ -71,7 +71,7 @@ const WhoWeAreM = () => {
             >
                 <img 
                 src={whoWeAre} alt="Who we are SITOG image" 
-                className="rounded-lg mt-4 h-[220px] phone:h-[300px] object-cover w-full"/>
+                className="rounded-md mt-4 h-[220px] phone:h-[300px] object-cover w-full"/>
             </motion.div>
         </div>
     </section>

@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 
 import NavbarM from "./NavbarM";
 
-import logo from '../assets/navbar/sitog-logo.png'
+import logo from '../assets/home/navbar/sitog-logo.png'
 
 const Navbar = () => {
 
@@ -58,10 +58,10 @@ const Navbar = () => {
         'h-0'} `}> </div>
 
         <div 
-        className={`fixed z-[100] w-[92%] big:w-[70%] left-1/2 -translate-x-1/2  flex items-center justify-between text-[13px] laptop:text-[16px] big:text-[22px] py-2 px-[2%] laptop:py-3 big:py-4 bg-white transition-all border-transparent duration-500 top-[28px] laptop:top-[35px] rounded-xl ${
+        className={`fixed z-[100] w-[92%] big:w-[70%] left-1/2 -translate-x-1/2  flex items-center justify-between text-[13px] laptop:text-[16px] big:text-[22px] py-2 px-[2%] laptop:py-3 big:py-4 bg-white transition-all border-transparent duration-500 top-[28px] laptop:top-[35px]  rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl ${
           isSticky ? 
           "  mt-0" :
-          "  shadow-lg"
+          "  "
         }`}>
           <img 
           src={logo} 

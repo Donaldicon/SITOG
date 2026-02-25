@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import imageOne from "../assets/hero/img0M.png";
-import imageTwo from "../assets/hero/img1M.png";
-import imageThree from "../assets/hero/img2.png";
+import imageOne from "../../assets/home/hero/img0.png";
+import imageTwo from "../../assets/home/hero/img1.png";
+import imageThree from "../../assets/home/hero/img2.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
@@ -35,11 +35,9 @@ const images = [
 
 const slides = [...images, images[0]];
 
-const HeroM = () => {
+const Hero = () => {
   const [index, setIndex] = useState(0);
   const [transition, setTransition] = useState(true);
-
-  const activeIndex = index === images.length ? 0 : index;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,8 +50,8 @@ const HeroM = () => {
   useEffect(() => {
     if (index === slides.length - 1) {
       const timeout = setTimeout(() => {
-        setTransition(false);
-        setIndex(0);
+        setTransition(false); 
+        setIndex(0); 
 
         setTimeout(() => {
           setTransition(true);
@@ -66,8 +64,7 @@ const HeroM = () => {
 
   return (
     <div 
-    className="overflow-hidden md:hidden w-full rounded-3xl h-[500px] relative">
-      
+      className="overflow-hidden hidden md:block w-full md:h-[350px] laptop:h-[450px] xl:h-[580px] rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl big:h-[700px] relative">
       <div
         className={`flex ${
           transition ? "transition-transform duration-1000 ease-in-out" : ""
@@ -77,58 +74,39 @@ const HeroM = () => {
         {slides.map((slide, i) => (
           <div
             key={i}
-            className="w-full h-[500px] flex-shrink-0 relative"
+            className="w-full md:h-[350px] laptop:h-[450px] xl:h-[580px] big:h-[700px] flex-shrink-0  relative"
           >
             <img
               src={slide.img}
               alt="slide"
-              className="w-full h-[500px] object-cover rounded-3xl"
+              className="w-full md:h-[350px] laptop:h-[450px] xl:h-[580px] big:h-[700px]  object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl"
             />
 
             <div 
-            className="w-[95%] absolute top-1/2 left-[2.5%]  -translate-y-1/2 bg-[#dddfe0]/90 px-[3%] py-[8%] rounded-lg shadow-lg">
+            className="w-[43%] absolute top-1/2 left-[3%] -translate-y-1/2 bg-[#dddfe0]/90 px-[2%] py-[4%] rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl shadow-sm">
               <h1 
-              className="font-bold mb-4 text-[25px] leading-[35px] text-[#3A3B40] font-halyard">
+              className=" font-bold mb-4 md:text-[20px] lg:text-[26px] md:leading-[25px] lg:leading-[33px] laptop:leading-[40px] laptop:text-[33px] big:text-[40px] big:leading-[50px] text-[#3A3B40] font-halyard">
                 {slide.header}
               </h1>
-
               <p 
-              className="mb-4 text-[12px] text-[#4C4E54] font-hind font-medium text-left">
+              className="mb-4 md:text-[10px] lg:text-[12px] laptop:text-[15px] big:text-[20px] text-[#4C4E54] font-hind font-medium text-left">
                 {slide.text}
               </p>
-
-              <button 
-              className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard font-medium space-x-[4px] py-[5px]  px-[8px]  rounded-md text-[11px] flex items-center ">
-                <span>
-                    {slide.button}
-                </span>
+            <button 
+            className="bg-[#FDCF17] text-[#3A3B40]  hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard font-medium space-x-[3px] laptop:space-x-[5px] py-[5px] laptop:py-[8px] px-[8px] laptop:px-[10px] big:py-[12px] big:px-[13px] rounded-md md:text-[8px] lg:text-[10px] laptop:text-[13px] flex items-center justify-start big:text-[20px]">
+                <span>{slide.button}</span>
                 <div 
-                className="text-[#FDCF17] bg-black h-[12px] w-[12px]  rounded-full flex items-center justify-center text-[7px] mt-[1px]">
-                  <FontAwesomeIcon icon={faChevronRight} />
+                className=" text-[#FDCF17] bg-black  h-[10px] w-[10px] lg:w-[13px] lg:h-[13px] laptop:w-[16px] laptop:h-[16px] big:h-[20px] big:w-[20px] rounded-full flex items-center justify-center md:text-[5px] lg:text-[6px] laptop:text-[7px] big:text-[10px] mt-[2px] laptop:mt-[1px] big:mt-[3px]">
+                    <FontAwesomeIcon icon={faChevronRight}/>
                 </div>
-              </button>
+            </button>
+
             </div>
           </div>
         ))}
       </div>
-
-      <div 
-      className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-[5px] bg-[#47464a] px-3 py-1 rounded-full">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setIndex(i)}
-            className={`h-2 w-2 rounded-full transition-all duration-300 ${
-              activeIndex === i
-                ? "bg-[#FDCF17] scale-110 w-6"
-                : "bg-[#DBDCDF] hover:bg-white"
-            }`}
-          />
-        ))}
-      </div>
-
     </div>
   );
 };
 
-export default HeroM;
+export default Hero;

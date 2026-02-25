@@ -3,9 +3,9 @@ import OurServicesM from './OurServicesM'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons/faChevronRight'
 
-import OS1 from '../assets/ourservices/OS1.png'
-import OS2 from '../assets/ourservices/OS2.png'
-import OS3 from '../assets/ourservices/OS3.png'
+import OS1 from '../../assets/home/ourservices/OS1.png'
+import OS2 from '../../assets/home/ourservices/OS2.png'
+import OS3 from '../../assets/home/ourservices/OS3.png'
 
 import { motion, easeInOut } from 'motion/react'
 
@@ -13,7 +13,7 @@ const OurServices = () => {
   return (
     <section>
         <section 
-        className='hidden md:block bg-white py-7 laptop:py-10 big:py-14 px-[3%] rounded-3xl shadow-lg font-halyard '>
+        className='hidden md:block bg-white py-7 laptop:py-10 big:py-14 px-[3%] rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl  shadow-sm font-halyard '>
             <motion.div 
             initial={{opacity:0, y:20}}
             whileInView={{opacity:100, y:0}}
@@ -55,7 +55,7 @@ const OurServices = () => {
                         <img 
                         src={OS1} 
                         alt="Engineering Services Image" 
-                        className='w-full h-[180px] lg:h-[220px] laptop:h-[310px] big:h-[410px] object-cover rounded-2xl shadow-md'
+                        className='w-full h-[180px] lg:h-[220px] laptop:h-[310px] big:h-[410px] object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl shadow-md'
                         />
                         <p 
                         className='absolute bottom-2 laptop:bottom-3 big:bottom-4 left-[5%] text-white md:text-[15px] md:leading-[16px] lg:text-[18px] lg:leading-[20px] laptop:leading-[24px] big:leading-[32px] laptop:text-[21px] big:text-[30px] font-medium '>
@@ -68,7 +68,7 @@ const OurServices = () => {
                         <img 
                         src={OS2} 
                         alt="Procurement Management Image" 
-                        className='w-full h-[180px] lg:h-[220px] laptop:h-[310px] big:h-[410px] object-cover rounded-2xl shadow-md'
+                        className='w-full h-[180px] lg:h-[220px] laptop:h-[310px] big:h-[410px] object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl shadow-md'
                         />
                         <p 
                         className='absolute bottom-2 laptop:bottom-3 big:bottom-4 left-[5%] text-white md:text-[15px] md:leading-[16px] lg:text-[18px] lg:leading-[20px] laptop:leading-[24px] big:leading-[32px] laptop:text-[21px] big:text-[30px] font-medium '>
@@ -81,7 +81,7 @@ const OurServices = () => {
                         <img 
                         src={OS3} 
                         alt="Project Execution and Support Image" 
-                        className='w-full h-[180px] lg:h-[220px] laptop:h-[310px] big:h-[410px] object-cover rounded-2xl shadow-md'
+                        className='w-full h-[180px] lg:h-[220px] laptop:h-[310px] big:h-[410px] object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl shadow-md'
                         />
                         <p 
                         className='absolute bottom-2 laptop:bottom-3 big:bottom-4 left-[5%] text-white md:text-[15px] md:leading-[16px] lg:text-[18px] lg:leading-[20px] laptop:leading-[24px] big:leading-[32px] laptop:text-[21px] big:text-[30px] font-medium '>

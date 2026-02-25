@@ -1,11 +1,11 @@
 
-import cOne from '../assets/ourclients/C1.png'
-import cTwo from '../assets/ourclients/C22.png'
-import cThree2 from '../assets/ourclients/C32.png'
-import cFour from '../assets/ourclients/C4.png'
-import cFive from '../assets/ourclients/C5.png'
-import cSix from '../assets/ourclients/C6.png'
-import cSeven from '../assets/ourclients/C7.png'
+import cOne from '../../assets/home/ourclients/C1.png'
+import cTwo from '../../assets/home/ourclients/C22.png'
+import cThree2 from '../../assets/home/ourclients/C32.png'
+import cFour from '../../assets/home/ourclients/C4.png'
+import cFive from '../../assets/home/ourclients/C5.png'
+import cSix from '../../assets/home/ourclients/C6.png'
+import cSeven from '../../assets/home/ourclients/C7.png'
 
 import { motion, easeInOut } from 'motion/react'
 
@@ -86,7 +86,7 @@ const OurClientsM = () => {
           {slides.map((item, i) => (
             <div
               key={i}
-              className={`w-[150px] h-[100px] flex-shrink-0 bg-white py-2 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 ease-in-out `}
+              className={`w-[150px] h-[100px] flex-shrink-0 bg-white py-2 rounded-md shadow-sm hover:scale-105 transition-all duration-300 ease-in-out `}
             >
               <img
                 src={item.src}

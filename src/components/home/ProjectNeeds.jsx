@@ -1,5 +1,5 @@
 
-import co from '../assets/projectneeds/Co.jpg'
+import co from '../../assets/home/projectneeds/Co.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -14,10 +14,10 @@ const ProjectNeeds = () => {
         <img 
         src={co} 
         alt="Let's discuss your project needs" 
-        className='w-full h-[250px] lg:h-[330px] laptop:h-[450px] big:h-[590px] object-cover object-top rounded-3xl'
+        className='w-full h-[250px] lg:h-[330px] laptop:h-[450px] big:h-[590px] object-cover object-top rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'
         />
         <div 
-        className='bg-white/10 backdrop-blur-[10px] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[70%] flex flex-col items-center px-[8%] py-[25px] lg:py-[35px] laptop:py-[55px] big:py-[70px]'>
+        className='bg-white/10 backdrop-blur-[10px] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[70%] flex flex-col items-center px-[8%] py-[25px] lg:py-[35px] laptop:py-[55px] big:py-[70px] rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
             <h1 
             className='font-halyard text-white md:text-[22px] lg:text-[27px] laptop:text-[38px] big:text-[45px]'>
                 Let’s Discuss Your Project Needs

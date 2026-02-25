@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 
-import whoWeAre from '../assets/whoweare/who-we-are.png'
+import whoWeAre from '../../assets/home/whoweare/who-we-are.png'
 
 import WhoWeAreM from "./WhoWeAreM";
 
@@ -11,7 +11,7 @@ const WhoWeAre = () => {
   return (
     <section>
     <div 
-    className='mt-5 laptop:mt-7 big:mt-10 hidden md:flex  items-start justify-between rounded-3xl shadow-lg font-hind bg-white py-7 laptop:py-10 big:py-14 px-[3%] overflow-hidden'>
+    className='mt-5 laptop:mt-7 big:mt-10 hidden md:flex  items-start justify-between rounded-md shadow-sm lg:rounded-lg laptop:rounded-xl big:rounded-2xl font-hind bg-white py-7 laptop:py-10 big:py-14 px-[3%] overflow-hidden'>
 
         {/* left */}
         <div 
@@ -74,7 +74,7 @@ const WhoWeAre = () => {
             >
                 <img 
                 src={whoWeAre} alt="Who we are SITOG image" 
-                className="rounded-3xl md:mt-3 lg:mt-4 laptop:mt-5 big:mt-8 object-cover w-full"/>
+                className="rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl md:mt-3 lg:mt-4 laptop:mt-5 big:mt-8 object-cover w-full"/>
             </motion.div>
         </div>
     </div>

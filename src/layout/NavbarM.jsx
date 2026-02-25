@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { useState,useEffect } from "react";
 
-import logo from '../assets/navbar/sitog-logo.png'
+import logo from '../assets/home/navbar/sitog-logo.png'
 
 const NavbarM = () => {
 
@@ -62,12 +62,12 @@ const NavbarM = () => {
     
       <div 
       className={`fixed  z-[100] w-[92%] big:w-[72%] left-1/2 -translate-x-1/2 flex items-center justify-between text-[13px] py-3 px-[1%] bg-white transition-all border-transparent duration-500 top-[20px] ${
-        isOpen ? 'rounded-t-2xl' : 'rounded-2xl'
+        isOpen ? 'rounded-t-md' : 'rounded-md'
       }
     ${
         isSticky ? 
         " mt-0" :
-        "  shadow-lg"
+        "  "
       }`}>
         <img 
         src={logo} 
@@ -104,7 +104,7 @@ const NavbarM = () => {
 
         <div 
         onClick={openBar}
-        className={`fixed top-[56.5px] left-0 bg-[#ffffff] transition-all duration-700 ease-in-out w-full overflow-hidden z-[50] shadow-2xl rounded-b-2xl ${
+        className={`fixed top-[56.5px] left-0 bg-[#ffffff] transition-all duration-700 ease-in-out w-full overflow-hidden z-[50] shadow-2xl rounded-b-md ${
         isOpen ? 
         "h-[260px] opacity-100" 
         : 
@@ -112,7 +112,7 @@ const NavbarM = () => {
         > 
             <div>
                 <div 
-                className={`flex items-center flex-col justify-center space-y-7 px-3 py-5 rounded-lg  font-hind text-[#848485] dark:text-[#545455] text-[12px] transition-opacity duration-500 ${
+                className={`flex items-center flex-col justify-center space-y-7 px-3 py-5 rounded-md  font-hind text-[#848485] dark:text-[#545455] text-[12px] transition-opacity duration-500 ${
                 isOpen ? 
                 "opacity-100"
                 :

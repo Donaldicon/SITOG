@@ -1,4 +1,4 @@
-import logo from '../assets/navbar/sitog-logo.png'
+import logo from '../assets/home/navbar/sitog-logo.png'
 import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,7 +23,7 @@ const FooterM = () => {
   const year = new Date().getFullYear()
   return (
     <section 
-    className='bg-[#1F6D22] mx-[4%] px-[3%] mt-4 rounded-3xl font-hind py-3 md:hidden'>
+    className='bg-[#1F6D22] mx-[4%] px-[3%] my-4 rounded-md font-hind py-3 md:hidden'>
       <div 
       className='flex flex-col items-start'>
         {/* Left Section */}

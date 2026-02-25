@@ -1,7 +1,7 @@
-import po1 from '../assets/projectoverview/PO1.png'
-import po2 from '../assets/projectoverview/PO2.png'
-import po3 from '../assets/projectoverview/PO3.png'
-import po4 from '../assets/projectoverview/PO4.png'
+import po1 from '../../assets/home/projectoverview/PO1.png'
+import po2 from '../../assets/home/projectoverview/PO2.png'
+import po3 from '../../assets/home/projectoverview/PO3.png'
+import po4 from '../../assets/home/projectoverview/PO4.png'
 
 import ProjectOverviewM from './ProjectOverviewM'
 
@@ -11,7 +11,7 @@ const ProjectOverview = () => {
   return (
     <section>
     <div 
-    className="hidden md:flex flex-col items-center justify-center bg-white rounded-3xl my-5 laptop:my-7 big:my-10 py-5 laptop:py-7 big:py-10  shadow-lg  font-halyard">
+    className="hidden md:flex flex-col items-center justify-center bg-white rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl my-5 laptop:my-7 big:my-10 py-5 laptop:py-7 big:py-10  shadow-sm  font-halyard">
         <p 
         className='bg-[#F0F1F3] text-[#63646C] text-[9px] lg:text-[10px] laptop:text-[12px] big:text-[15px] rounded-md py-1 px-2 laptop:py-[6px] laptop:px-[8px] big:py-[8px] big:px-[12px] laptop:rounded-lg big:rounded-xl  mb-1 lg:mb-2 laptop:mb-3 big:mb-5 text-center'>
             Project Overview
@@ -43,9 +43,9 @@ const ProjectOverview = () => {
                         <img
                         src={po1} 
                         alt="Installation anfd Commisioning of Process Instruments and Mechanic Systems" 
-                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
+                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl  '>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl   '>
                             Installation and Commisioning of Process Instruments and Mechanic System
                         </p>
                     </div>
@@ -62,9 +62,9 @@ const ProjectOverview = () => {
                         <img
                         src={po3} 
                         alt="Supply of Critical Engineering Components for Refinery, Fertilizer, and Food production plants." 
-                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
+                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl '>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl '>
                             Supply of Critical Engineering Components for Refinery, Fertilizer, and Food production plants.
                         </p>
                     </div>
@@ -87,9 +87,9 @@ const ProjectOverview = () => {
                         <img
                         src={po2} 
                         alt="Technical Training and Field Workshops for Maintenance Teams" 
-                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
+                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl ]'>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
                             Technical Training and Field Workshops for Maintenance Teams
                         </p>
                     </div>
@@ -106,9 +106,9 @@ const ProjectOverview = () => {
                         <img
                         src={po4} 
                         alt="Calibration and maintenance of industrial instrumentation." 
-                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-lg'/>
+                        className='w-[280px] lg:w-[380px] laptop:w-[520px] big:w-[650px] h-full object-cover rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'/>
                         <p 
-                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md laptop:rounded-lg big:rounded-xl '>
+                        className='absolute bottom-2 laptop:bottom-3 big:bottom-5 mx-[2%] laptop:mx-[3%] px-[3%] py-[8px]  bg-white/80 md:text-[15px] md:leading-[17px] lg:text-[17px] lg:leading-[22px] laptop:text-[20px] laptop:leading-[25px] big:text-[30px] big:leading-[32px]  font-medium rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl '>
                             Calibration and maintenance of industrial instrumentation.
                         </p>
                     </div>

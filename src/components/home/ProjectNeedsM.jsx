@@ -1,6 +1,5 @@
-import c from '../assets/projectneeds/C.png'
-import cm from '../assets/projectneeds/Cm.png'
-import co from '../assets/projectneeds/Co.jpg'
+
+import co from '../../assets/home/projectneeds/Co.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -12,10 +11,10 @@ const ProjectNeedsM = () => {
         <img 
         src={co} 
         alt="Let's discuss your project needs" 
-        className='w-full h-[450px] object-cover object-top rounded-3xl'
+        className='w-full h-[450px] object-cover object-top rounded-md'
         />
         <div 
-        className='bg-white/10 backdrop-blur-[10px] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[95%] flex flex-col items-center px-[3%] py-[10px] '>
+        className='bg-white/10 backdrop-blur-[10px] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[95%] flex flex-col items-center px-[3%] py-[10px] rounded-md'>
             <h1 
             className='font-halyard text-white text-[25px] leading-[30px] text-center'>
                 Let’s Discuss Your Project Needs
