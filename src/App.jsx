@@ -53,8 +53,8 @@ const App = () => {
             <Route path='/partners' element={<Partners />}/>
             <Route path='/contact' element={<Contact />}/>
           </Routes>
+          <Footer />
         </PageWrapper>
-        <Footer />
       </Router>
     </div>
   )
