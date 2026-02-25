@@ -6,7 +6,6 @@ import Loader from './layout/Loader'
 
 // Layout
 import Navbar from './layout/Navbar.jsx'
-import NavbarM from './layout/NavbarM.jsx'
 import Footer from './layout/Footer.jsx'
 
 // Pages
@@ -55,6 +54,7 @@ const App = () => {
             <Route path='/contact' element={<Contact />}/>
           </Routes>
         </PageWrapper>
+        <Footer />
       </Router>
     </div>
   )
