@@ -47,6 +47,8 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const activeIndex = index === images.length ? 0 : index;
+
   useEffect(() => {
     if (index === slides.length - 1) {
       const timeout = setTimeout(() => {
@@ -103,6 +105,21 @@ const Hero = () => {
 
             </div>
           </div>
+        ))}
+      </div>
+
+      <div 
+      className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-[5px] laptop:space-x-[7px] big:space-x-[12px] bg-[#47464a] px-3 laptop:px-4 laptop:py-2 py-1 big:px-6 big:py-3 rounded-full">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`h-2 w-2 laptop:h-3 laptop:w-3 big:h-5 big:w-5 rounded-full transition-all duration-300 ${
+              activeIndex === i
+                ? "bg-[#FDCF17] scale-110 w-6 laptop:w-10 big:w-14"
+                : "bg-[#DBDCDF] hover:bg-white"
+            }`}
+          />
         ))}
       </div>
     </div>

@@ -100,11 +100,21 @@ const FooterM = () => {
                     <FontAwesomeIcon 
                     icon={faEnvelope} className='text-[8px] text-[#1F6D22] laptop:text-[13px] big:text-[17px]'/>
                   </div>
-                  <p className='font-jetBrainsMono '>
+                  <p className='font-hind '>
                     sales@sitogglobal.com
                   </p>
                 </div>
               </Link>
+
+              
+              <Link 
+              to='mailto:sitogglobal@gmail.com' target='_blank'>
+                  <p className='font-hind  pl-[18px]'>
+                    sitogglobal@gmail.com
+                  </p>
+              </Link>
+
+
 
               <div 
               className='flex  space-x-[4px] laptop:space-x-[6px] big:space-x-[8px]'>

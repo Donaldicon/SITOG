@@ -103,11 +103,20 @@ const Footer = () => {
                       <FontAwesomeIcon 
                       icon={faEnvelope} className='text-[8px] text-[#1F6D22] laptop:text-[13px] big:text-[17px]'/>
                     </div>
-                    <p className='font-jetBrainsMono '>
+                    <p className='font-hind '>
                       sales@sitogglobal.com
                     </p>
                   </div>
                 </Link>
+    
+                <Link 
+                to='mailto:sitogglobal@gmail.com' target='_blank'>
+                    <p className='font-hind'>
+                      sitogglobal@gmail.com
+                    </p>
+                </Link>
+
+
 
                 <div 
                 className='flex items-start space-x-[4px] laptop:space-x-[6px] big:space-x-[8px]'>
@@ -117,7 +126,7 @@ const Footer = () => {
                     icon={faAddressCard} 
                     className='text-[8px] text-[#1F6D22] laptop:text-[13px] big:text-[17px]'/>
                   </div>
-                  <p className='font-jetBrainsMono  text-end '>35Isale Ariya Street, Opposite<br /> 
+                  <p className='font-hind  text-end '>35Isale Ariya Street, Opposite<br /> 
                   Ori Ade Hotel, Dalemo, Sango<br /> 
                   Ota, Ogun State, Nigeria.</p>
                 </div>
@@ -135,7 +144,7 @@ const Footer = () => {
                         icon={faPhone} 
                         className='text-[8px] text-[#1F6D22] laptop:text-[13px] big:text-[17px]'/>
                       </div>
-                      <p className='font-jetBrainsMonotext-end '>       +234-903-422-4789
+                      <p className='font-hind '>       +234-903-422-4789
                       </p>
                     </div>
                   </Link>

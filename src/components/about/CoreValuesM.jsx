@@ -12,10 +12,10 @@ const CoreValuesM = () => {
             <img 
             src={cvBg} 
             alt="Background Image of Core values section"
-            className='rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl h-[730px] otherPhones:h-[650px] object-cover w-full object-right-top' 
+            className='rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl h-[730px] otherPhones:h-[650px] object-cover w-full object-center' 
             />
             <div 
-            className='absolute top-1/2 -translate-y-1/2 w-full flex flex-col items-center justify-center p-10 space-y-[10px] px-[4%]'>
+            className='absolute top-1/2 -translate-y-1/2 w-full flex flex-col items-center justify-center p-10 space-y-[10px] px-[4%] overflow-hidden'>
                 {/* box 1 */}
                 <motion.div 
                 initial={{opacity:0, x:-50}}
