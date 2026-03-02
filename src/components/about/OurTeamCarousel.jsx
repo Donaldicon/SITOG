@@ -175,10 +175,10 @@ const OurTeamCarousel = () => {
           <button
             key={i}
             onClick={() => setCurrentIndex(i)}
-            className={`h-2 w-2 laptop:h-3 laptop:w-3 big:h-5 big:w-5 rounded-full transition-all duration-300 ${
+            className={` rounded-full transition-all duration-300 ${
               activeIndex === i
-                ? "bg-[#FDCF17] scale-110 w-6 laptop:w-10 big:w-14"
-                : "bg-[#BAD2BA] "
+                ? "bg-[#FDCF17] scale-110 h-2 laptop:h-3 big:h-5 w-4 laptop:w-7 big:w-10"
+                : "bg-[#BAD2BA] h-2 w-2 laptop:h-3 laptop:w-3 big:h-5 big:w-5 "
             }`}
           />
         ))}
