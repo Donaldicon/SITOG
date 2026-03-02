@@ -99,7 +99,7 @@ const AboutOurServicesM = () => {
                 <button
                 onClick={handlePrev}
                 disabled={currentIndex === 0}
-                className={`text-[5px]  h-[10px] w-[10px]  rounded-full bg-black text-white ${
+                className={`text-[10px] w-[18px] h-[18px]   rounded-full bg-black text-white ${
                     currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
                 }`}
                 >
@@ -109,7 +109,7 @@ const AboutOurServicesM = () => {
                 <button
                 onClick={handleNext}
                 disabled={currentIndex === slides.length - 1}
-                className={`text-[5px] h-[10px] w-[10px] rounded-full bg-black text-white ${
+                className={`text-[10px] w-[18px] h-[18px]  rounded-full bg-black text-white ${
                     currentIndex === slides.length - 1
                     ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
                 }`}

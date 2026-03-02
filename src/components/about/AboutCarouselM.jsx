@@ -69,7 +69,7 @@ const AboutCarouselM = () => {
         <button
           onClick={handlePrev}
           disabled={currentIndex === 0}
-          className={`text-[5px]  h-[10px] w-[10px]  rounded-full bg-black text-white ${
+          className={`text-[10px] w-[18px] h-[18px]   rounded-full bg-black text-white ${
             currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
           }`}
         >
@@ -79,7 +79,7 @@ const AboutCarouselM = () => {
         <button
           onClick={handleNext}
           disabled={currentIndex >= maxIndex}
-          className={`text-[5px] h-[10px] w-[10px] rounded-full bg-black text-white ${
+          className={`text-[10px] w-[18px] h-[18px] rounded-full bg-black text-white ${
             currentIndex >= maxIndex ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
           }`}
         >

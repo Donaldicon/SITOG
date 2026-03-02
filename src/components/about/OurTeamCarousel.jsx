@@ -123,7 +123,7 @@ const OurTeamCarousel = () => {
                     </h2>
 
                     <div className="md:text-[11px] lg:text-[12px] laptop:text-[16px] big:text-[22px] mt-[4px] lg:mt-[7px] laptop:mt-[10px] big:mt-[14px] text-[#63646C] break-all text-center flex items-center justify-center">
-                        <Link to='mailto:{mal}' target='_blank'>
+                        <Link to={`mailto:${slide.mal}`} target='_blank'>
                         <FontAwesomeIcon 
                         icon={faEnvelope}
                         className='text-[8px] laptop:text-[13px] big:text-[17px] mr-[2px] lg:mr-[3px] laptop:mr-[4px] big:mr-[6px]'
@@ -133,7 +133,7 @@ const OurTeamCarousel = () => {
                     </div>
 
                     <div className="md:text-[11px] lg:text-[12px] laptop:text-[16px] big:text-[22px] mt-[4px] lg:mt-[7px] laptop:mt-[10px] big:mt-[14px] text-[#63646C]">
-                        <Link to='tel:{phone}' target='blank'>
+                        <Link to={`tel:${slide.phone}`} target='blank'>
                         <FontAwesomeIcon 
                         icon={faPhone}
                         className='text-[8px] laptop:text-[13px] big:text-[17px] mr-[2px] lg:mr-[3px] laptop:mr-[4px] big:mr-[6px]'

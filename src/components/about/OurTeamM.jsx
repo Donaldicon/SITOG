@@ -82,7 +82,7 @@ const OurTeamM = () => {
     <div className="w-full md:hidden  font-hind flex items-center flex-col rounded-md bg-white py-5 mb-4">
         <p 
         className="bg-[#F0F1F3] text-[#63646C] text-[10px] rounded-lg py-2 px-3 w-fit  text-center">
-            Our Services
+            Our Team
         </p>
 
         <h1 
@@ -113,14 +113,14 @@ const OurTeamM = () => {
             </h2>
 
             <div className="text-[#63646C] text-[12px] flex items-center mt-1 gap-1 break-all">
-              <Link to='mailto:{mal}' target='_blank'>
+              <Link to={`mailto:${slide.mal}`}  target='_blank'>
               <FontAwesomeIcon icon={faEnvelope} />
               {slide.mal}
               </Link>
             </div>
 
             <div className="text-[#63646C] text-[12px] flex items-center gap-1 mt-1">
-              <Link to='tel:{phone}' target='blank'>
+              <Link to={`tel:${slide.phone}`}  target='blank'>
               <FontAwesomeIcon icon={faPhone} />
               {slide.phone}
               </Link>
