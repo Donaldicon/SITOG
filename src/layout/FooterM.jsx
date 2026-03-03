@@ -31,11 +31,16 @@ const FooterM = () => {
         className='w-[80%]'>
           <div 
           className='w-[75px] bg-white rounded-full flex items-center justify-center'>
-            <img 
-            src={logo} 
-            alt="SITOG logo" 
-            className='w-[65px]'
-            />
+            <Link 
+            to='/'
+            onClick={scrollToTop}
+            >
+              <img 
+              src={logo} 
+              alt="SITOG logo" 
+              className='w-[65px]'
+              />
+            </Link>
           </div>
           <p 
           className='text-[12px] text-[#E9F0E9]  font-halyard leading-[16px] font-medium  mt-[4px]'>

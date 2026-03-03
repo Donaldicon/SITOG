@@ -69,10 +69,15 @@ const NavbarM = () => {
         " mt-0" :
         "  "
       }`}>
-        <img 
-        src={logo} 
-        alt="Sitog Logo"
-        className="w-[65px] laptop:w-[95px] big:w-[140px] "/>
+        <NavLink 
+        to='/'
+        onClick={scrollToTop}
+        >
+          <img 
+          src={logo} 
+          alt="Sitog Logo"
+          className="w-[65px] laptop:w-[95px] big:w-[140px] "/>
+        </NavLink>
 
         <div 
         onClick={openBar}

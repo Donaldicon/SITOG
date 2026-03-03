@@ -34,11 +34,16 @@ const Footer = () => {
           className='w-[30%]'>
             <div 
             className='w-[75px] laptop:w-[110px] big:w-[160px] bg-white rounded-full flex items-center justify-center'>
-              <img 
-              src={logo} 
-              alt="SITOG logo" 
-              className='w-[65px] laptop:w-[95px] big:w-[140px]'
-              />
+              <Link 
+              to='/'
+              onClick={scrollToTop}
+              >
+                <img 
+                src={logo} 
+                alt="SITOG logo" 
+                className='w-[65px] laptop:w-[95px] big:w-[140px]'
+                />
+              </Link>
             </div>
             <p 
             className='text-[9px] laptop:text-[12px] big:text-[15px] text-[#E9F0E9]  font-halyard leading-[15px] laptop:leading-[20px] big:leading-[27px] w-[75%] mt-[4px] lg:mt-[6px] laptop:mt-[9px] big:mt-[14px]'>
