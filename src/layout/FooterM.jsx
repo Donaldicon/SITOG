@@ -108,6 +108,7 @@ const FooterM = () => {
             
             <div 
             className='space-y-[7px]  flex flex-col'>
+              <div>
               <Link 
               to='mailto:sales@sitogglobal.com' target='_blank'>
                 <div 
@@ -130,6 +131,7 @@ const FooterM = () => {
                     sitogglobal@gmail.com
                   </p>
               </Link>
+              </div>
 
 
 

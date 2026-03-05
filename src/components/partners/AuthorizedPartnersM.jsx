@@ -18,7 +18,7 @@ const AuthorizedPartnersM = () => {
         {/* Row 1 */}
         <div className='flex flex-col items-center justify-between w-full font-halyard space-y-[12px]'>
 
-            <Link to='https://www.vega.com/' target='_blank' className='w-full'>
+            <Link to='https://www.vega.com/en-za' target='_blank' className='w-full'>
                     <motion.div 
         initial={{opacity:0, x:50}}
         whileInView={{opacity:100, x:0}}
@@ -65,7 +65,7 @@ const AuthorizedPartnersM = () => {
         
         {/* Row 2 */}
         <div className='flex flex-col items-center justify-center w-full mt-[12px] space-y-[12px]'>
-            <Link to='https://flexco.co.za/' target='_blank' className='w-full'>
+            <Link to='https://flexco.com/' target='_blank' className='w-full'>
         <motion.div 
         initial={{opacity:0, x:50}}
         whileInView={{opacity:100, x:0}}

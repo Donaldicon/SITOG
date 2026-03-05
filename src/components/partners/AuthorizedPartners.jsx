@@ -22,7 +22,7 @@ const AuthorizedPartners = () => {
         viewport={{once:true}}
         >
         <div className='flex items-center justify-between w-full font-halyard'>
-            <Link to='https://www.vega.com/' target='_blank' className='w-[52%]'>
+            <Link to='https://www.vega.com/en-za' target='_blank' className='w-[52%]'>
             <div className='border-[#CACBD0] bg-white hover:border-[#1f6d22] hover:bg-[#e9f0e9] transition-all duration-500 ease-in-out border-[1px] w-full h-[140px] lg:h-[155px] laptop:h-[185px] big:h-[225px] px-[2%] flex flex-col justify-center rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
                     <img 
                     src={vega}
@@ -50,7 +50,7 @@ const AuthorizedPartners = () => {
         
         {/* Row 2 */}
         <div className='flex items-center justify-between w-full mt-[14px] lg:mt-[16px] laptop:mt-[20px] big:mt-[23px] font-halyard'>
-            <Link to='https://flexco.co.za/' target='_blank' className='w-[32%]'>
+            <Link to='https://flexco.com/' target='_blank' className='w-[32%]'>
             <div className='border-[#CACBD0] bg-white hover:border-[#1f6d22] hover:bg-[#e9f0e9] transition-all duration-500 ease-in-out border-[1px] w-full h-[140px] lg:h-[155px] laptop:h-[185px] big:h-[225px] px-[2%] flex flex-col justify-center rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
 
                     <img 

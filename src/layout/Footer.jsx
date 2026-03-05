@@ -111,6 +111,7 @@ const Footer = () => {
               
               <div 
               className='space-y-2 laptop:space-y-[15px] big:space-y-4 flex flex-col items-end'>
+                <div className='flex items-end  flex-col space-y-[3px] laptop:space-y-[5px] big:space-y-[8px]'>
                 <Link 
                 to='mailto:sales@sitogglobal.com' target='_blank'>
                   <div 
@@ -127,11 +128,13 @@ const Footer = () => {
                 </Link>
     
                 <Link 
-                to='mailto:sitogglobal@gmail.com' target='_blank'>
+                to='mailto:sitogglobal@gmail.com' target='_blank'
+                >
                     <p className='font-hind'>
                       sitogglobal@gmail.com
                     </p>
                 </Link>
+                </div>
 
 
 
