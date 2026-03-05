@@ -6,6 +6,8 @@ import whoWeAre from '../../assets/home/whoweare/who-we-are.png'
 import WhoWeAreM from "./WhoWeAreM";
 
 import { motion, easeInOut } from "motion/react";
+
+import { Link } from "react-router-dom";
  
 const WhoWeAre = () => {
   return (
@@ -55,6 +57,7 @@ const WhoWeAre = () => {
             transition={{duration:2, ease:easeInOut}}
             viewport={{once:true}}
             >
+                <Link to='/about'>
                 <button 
                 className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard w-[60px] h-[20px] lg:w-[75px] lg:h-[25px] laptop:w-[100px] laptop:h-[30px] big:w-[140px] big:h-[45px] font-medium space-x-[4px] laptop:space-x-[5px] big:space-x-[7px] rounded-[4px] laptop:rounded-[6px] md:text-[8px] lg:text-[10px] laptop:text-[13px] flex items-center justify-center big:text-[20px]">
                     <span>View More</span>
@@ -63,6 +66,7 @@ const WhoWeAre = () => {
                         <FontAwesomeIcon icon={faChevronRight}/>
                     </div>
                 </button>
+                </Link>
             </motion.div>
             
 

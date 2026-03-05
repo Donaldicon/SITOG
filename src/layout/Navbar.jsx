@@ -102,9 +102,11 @@ const Navbar = () => {
           </div>
 
           {/* Get a quote */}
+          <NavLink to='/contact'>
           <button className="bg-[#FDCF17] text-[#3A3B40] hover:text-[#fdcd17] hover:bg-transparent transition-all duration-500 ease-in-out font-halyard font-medium py-[7px] laptop:py-[10px] px-[8px] laptop:px-[12px] big:py-[14px] big:px-[16px]  rounded-md">
             Get a Quote Now
           </button>
+          </NavLink>
         </div>
         
       </section>

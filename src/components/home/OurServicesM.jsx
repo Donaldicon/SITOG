@@ -9,6 +9,8 @@ import OS3 from '../../assets/home/ourservices/OS3.png'
 
 import { motion, easeInOut } from 'motion/react'
 
+import { Link } from 'react-router-dom'
+
 const images = [
   {
     img: OS1,
@@ -102,14 +104,16 @@ const OurServicesM = () => {
         transition={{duration:2, ease:easeInOut}}
         viewport={{once:true}}
         >
-        <button 
-        className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard w-[75px] h-[30px] font-medium space-x-[4px] rounded-[4px] text-[11px] flex items-center justify-center">
-            <span>View More</span>
-            <div 
-            className=" text-[#FDCF17] bg-black  h-[10px] w-[10px]  rounded-full flex items-center justify-center text-[5px] mt-[1px] laptop:mt-[2px] big:mt-[3px]">
-                <FontAwesomeIcon icon={faChevronRight}/>
-            </div>
-        </button>
+                                      <Link to='/about'>
+          <button 
+          className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard w-[75px] h-[30px] font-medium space-x-[4px] rounded-[4px] text-[11px] flex items-center justify-center">
+              <span>View More</span>
+              <div 
+              className=" text-[#FDCF17] bg-black  h-[10px] w-[10px]  rounded-full flex items-center justify-center text-[5px] mt-[1px] laptop:mt-[2px] big:mt-[3px]">
+                  <FontAwesomeIcon icon={faChevronRight}/>
+              </div>
+          </button>
+        </Link>
         </motion.div>
 
         <div 

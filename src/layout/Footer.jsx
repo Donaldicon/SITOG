@@ -1,5 +1,5 @@
 import logo from '../assets/home/navbar/sitog-logo.png'
-import { Link } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 
 import FooterM from './FooterM'
 
@@ -20,6 +20,14 @@ const Footer = () => {
         top: 0,
         behavior: "smooth",
     });
+  }
+
+    const navLinksClass = ({isActive}) => {
+    return `inline-block transition-all duration-1000 ease-in-out hover:text-[#1F6D22] hover:font ${
+      isActive ? 
+      'text-[#FDCF17] font-semi-bold ' : 
+      'text-[#E9F0E9]'
+    }`
   }
 
   const year = new Date().getFullYear()
@@ -63,29 +71,33 @@ const Footer = () => {
               </h1>
               <div 
               className='space-y-[6px] laptop:space-y-[15px] big:space-y-4 flex flex-col items-end'>
-                <Link 
+                <NavLink 
                 to='/' 
-                onClick={scrollToTop}>
+                onClick={scrollToTop}
+                className={navLinksClass}>
                   Home
-                </Link>
+                </NavLink>
 
-                <Link 
+                <NavLink 
                 to='/about' 
-                onClick={scrollToTop}>
+                onClick={scrollToTop}
+                className={navLinksClass}>
                   About Us
-                </Link>
+                </NavLink>
 
-                <Link 
+                <NavLink 
                 to='/partners' 
-                onClick={scrollToTop}>
+                onClick={scrollToTop}
+                className={navLinksClass}>
                   Partners
-                </Link>
+                </NavLink>
 
-                <Link 
+                <NavLink 
                 to='/contact' 
-                onClick={scrollToTop}>
+                onClick={scrollToTop}
+                className={navLinksClass}>
                   Contact Us
-                </Link>
+                </NavLink>
               </div>
             </div>
 
@@ -184,7 +196,7 @@ const Footer = () => {
               </h1>
               <div 
               className='space-y-[6px] laptop:space-y-[15px] big:space-y-4 flex flex-col items-end'>
-                <Link>
+                  <Link to='https://www.linkedin.com/company/sitog-global-links-limited/' target='_blank'>
                   <div 
                   className='flex items-center space-x-[4px] laptop:space-x-[6px] big:space-x-[8px]'>
                     <p>LinkedIn</p>
@@ -195,9 +207,9 @@ const Footer = () => {
                       className='text-[8px] text-[#1F6D22] laptop:text-[13px] big:text-[17px]'/>
                     </div>
                   </div>
-                </Link>
+                  </Link>
             
-                <Link>
+                <Link to='https://web.facebook.com/sitog.links' target='_blank'>
                   <div 
                   className='flex items-center space-x-[4px] laptop:space-x-[6px] big:space-x-[8px]'>
                     <p>Facebook</p>
@@ -210,7 +222,7 @@ const Footer = () => {
                   </div>
                 </Link>
 
-                <Link>
+                {/* <Link>
                   <div 
                   className='flex items-center space-x-[4px] laptop:space-x-[6px] big:space-x-[8px]'>
                     <p>X</p>
@@ -221,7 +233,7 @@ const Footer = () => {
                       className='text-[8px] text-[#1F6D22] laptop:text-[13px] big:text-[17px]'/>
                     </div>
                   </div>
-                </Link>
+                </Link> */}
 
 
                 <button 

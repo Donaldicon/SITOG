@@ -12,7 +12,7 @@ const AuthorizedPartnersM = () => {
   return (
     <div className='overflow-hidden'>
         <h1 
-        className='text-[#1C631F] text-center font-bold my-2 phone:my-3 text-[25px] leading-[28px]'>
+        className='text-[#1C631F] text-center font-bold my-2 phone:my-3 mb-5 text-[25px] leading-[28px]'>
             Authorized OEM Partnerships
         </h1>
         {/* Row 1 */}

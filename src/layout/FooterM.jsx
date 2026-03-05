@@ -1,5 +1,5 @@
 import logo from '../assets/home/navbar/sitog-logo.png'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
@@ -18,6 +18,14 @@ const FooterM = () => {
         top: 0,
         behavior: "smooth",
     });
+  }
+
+    const navLinksClass = ({isActive}) => {
+    return `inline-block transition-all duration-1000 ease-in-out hover:text-[#1F6D22] hover:font ${
+      isActive ? 
+      'text-[#FDCF17] font-semi-bold ' : 
+      'text-[#E9F0E9]'
+    }`
   }
 
   const year = new Date().getFullYear()
@@ -60,29 +68,33 @@ const FooterM = () => {
             </h1>
             <div 
             className='space-y-[3px] flex flex-col '>
-              <Link 
+              <NavLink 
               to='/' 
-              onClick={scrollToTop}>
+              onClick={scrollToTop}
+              className={navLinksClass}>
                 Home
-              </Link>
+              </NavLink>
 
-              <Link 
+              <NavLink 
               to='/about' 
-              onClick={scrollToTop}>
+              onClick={scrollToTop}
+              className={navLinksClass}>
                 About Us
-              </Link>
+              </NavLink>
 
-              <Link 
+              <NavLink 
               to='/partners' 
-              onClick={scrollToTop}>
+              onClick={scrollToTop}
+              className={navLinksClass}>
                 Partners
-              </Link>
+              </NavLink>
 
-              <Link 
+              <NavLink 
               to='/contact' 
-              onClick={scrollToTop}>
+              onClick={scrollToTop}
+              className={navLinksClass}>
                 Contact Us
-              </Link>
+              </NavLink>
             </div>
           </div>
 
@@ -188,7 +200,7 @@ const FooterM = () => {
             </h1>
             <div 
             className='space-y-[3px] flex flex-col '>
-              <Link>
+              <Link to='https://www.linkedin.com/company/sitog-global-links-limited/' target='_blank'>
                 <div 
                 className='flex items-center space-x-[4px]'>
                   <p>LinkedIn</p>
@@ -201,7 +213,7 @@ const FooterM = () => {
                 </div>
               </Link>
           
-              <Link>
+              <Link to='https://web.facebook.com/sitog.links' target='_blank'>
                 <div 
                 className='flex items-center space-x-[4px] '>
                   <p>Facebook</p>
@@ -214,7 +226,7 @@ const FooterM = () => {
                 </div>
               </Link>
 
-              <Link>
+              {/* <Link>
                 <div 
                 className='flex items-center space-x-[4px]'>
                   <p>X</p>
@@ -225,7 +237,7 @@ const FooterM = () => {
                     className='text-[8px] text-[#1F6D22] '/>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
 
             
 

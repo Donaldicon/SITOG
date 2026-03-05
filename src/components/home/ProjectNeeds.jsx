@@ -6,6 +6,8 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import ProjectNeedsM from './ProjectNeedsM'
 
+import { Link } from 'react-router-dom'
+
 const ProjectNeeds = () => {
   return (
     <section>
@@ -26,6 +28,7 @@ const ProjectNeeds = () => {
             className='text-[#F3F4F5] md:text-[10px] lg:text-[12px] laptop:text-[15px] big:text-[20px] text-center mt-[1px] lg:mt-[2px] laptop:mt-[4px] big:mt-[7px] font-hind'>
                 Reach out to our team to discuss your requirements, request a quote, or explore how we can deliver reliable, efficient solutions for your industry.
             </p>
+            <Link to='/contact'>
             <button 
             className="mt-[8px] lg:mt-[10px] laptop:mt-[16px] big:mt-[22px] bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard w-[90px] h-[22px] lg:w-[105px] lg:h-[27px] laptop:w-[140px] laptop:h-[33px] big:w-[210px] big:h-[48px] font-medium space-x-[4px] laptop:space-x-[5px] big:space-x-[7px] rounded-[4px] laptop:rounded-[6px] md:text-[8px] lg:text-[10px] laptop:text-[13px] flex items-center justify-center big:text-[20px]">
                 <span>Contact Our Team</span>
@@ -34,6 +37,7 @@ const ProjectNeeds = () => {
                     <FontAwesomeIcon icon={faChevronRight}/>
                 </div>
             </button>
+            </Link>
         </div>
     </div>
     <ProjectNeedsM />

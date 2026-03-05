@@ -4,6 +4,8 @@ import co from '../../assets/home/projectneeds/Co.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
+import { Link } from 'react-router-dom'
+
 const ProjectNeedsM = () => {
   return (
     <div 
@@ -23,14 +25,16 @@ const ProjectNeedsM = () => {
             className='text-[#F3F4F5] text-[12px] mt-[7px] text-center font-hind'>
                 Reach out to our team to discuss your requirements, request a quote, or explore how we can deliver reliable, efficient solutions for your industry.
             </p>
-        <button 
-        className="mt-[12px] bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard w-[110px] h-[30px] font-medium space-x-[4px] rounded-[4px] text-[11px] flex items-center justify-center">
-            <span>Contact Our Team</span>
-            <div 
-            className=" text-[#FDCF17] bg-black  h-[10px] w-[10px]  rounded-full flex items-center justify-center text-[5px] mt-[1px] laptop:mt-[2px] big:mt-[3px]">
-                <FontAwesomeIcon icon={faChevronRight}/>
-            </div>
-        </button>
+        <Link to='/contact'>
+            <button 
+            className="mt-[12px] bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard w-[110px] h-[30px] font-medium space-x-[4px] rounded-[4px] text-[11px] flex items-center justify-center">
+                <span>Contact Our Team</span>
+                <div 
+                className=" text-[#FDCF17] bg-black  h-[10px] w-[10px]  rounded-full flex items-center justify-center text-[5px] mt-[1px] laptop:mt-[2px] big:mt-[3px]">
+                    <FontAwesomeIcon icon={faChevronRight}/>
+                </div>
+            </button>
+        </Link>
         </div>
     </div>
   )

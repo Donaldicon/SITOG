@@ -6,6 +6,8 @@ import imageThree from "../../assets/home/hero/img2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 
+import { Link } from "react-router-dom";
+
 const images = [
   {
     img: imageOne,
@@ -14,6 +16,7 @@ const images = [
     text:
       "SITOG Global Links Limited delivers world-class Engineering, Procurement, and Construction (EPC) services, combining global technologies with local expertise across Oil & Gas, Power, Manufacturing, Water, and Process Industries.",
     button: "Learn More",
+    theLink: "/about",
   },
   {
     img: imageTwo,
@@ -22,6 +25,7 @@ const images = [
     text:
       "We partner with globally trusted OEMs to provide precision-engineered solutions, reliable procurement, and end-to-end proect execution for Nigeria's leading industrial operators.",
     button: "Our OEM Partners",
+    theLink: "/partners",
   },
   {
     img: imageThree,
@@ -30,6 +34,7 @@ const images = [
     text:
       "From instrumentation and automation to full EPC proect delivery, SITOG Global Links Limited helps industries optimize operations, improve efficiency, and achieve sustainable growth",
     button: "Request a Consultation",
+    theLink: "/contact",
   },
 ];
 
@@ -97,6 +102,7 @@ const HeroM = () => {
                 {slide.text}
               </p>
 
+              <Link to={`${slide.theLink}`}>
               <button 
               className="bg-[#FDCF17] text-[#3A3B40] hover:bg-[#af8a04] transition-all duration-500 ease-in-out font-halyard font-medium space-x-[4px] py-[5px]  px-[8px]  rounded-md text-[11px] flex items-center ">
                 <span>
@@ -107,6 +113,7 @@ const HeroM = () => {
                   <FontAwesomeIcon icon={faChevronRight} />
                 </div>
               </button>
+              </Link>
             </div>
           </div>
         ))}
