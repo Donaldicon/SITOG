@@ -55,7 +55,7 @@ const OurTeamM = () => {
     },
     {
       image: ot6,
-      position: "Internal Sales Engineers",
+      position: "Internal Sales Engineer",
       name: "Pesilade Lucky",
       mal: "pesilade.lucky@sitogglobal.com",
       phone: "0704 740 9321",
