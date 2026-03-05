@@ -146,7 +146,7 @@ const Footer = () => {
                     icon={faAddressCard} 
                     className='text-[8px] text-[#1F6D22] laptop:text-[13px] big:text-[17px]'/>
                   </div>
-                  <p className='font-hind  text-end '>35Isale Ariya Street, Opposite<br /> 
+                  <p className='font-hind  text-end '>35, Isale Ariya Street, Opposite<br /> 
                   Ori Ade Hotel, Dalemo, Sango<br /> 
                   Ota, Ogun State, Nigeria.</p>
                 </div>

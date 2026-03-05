@@ -6,7 +6,8 @@ import ot3 from "../../assets/about/our-team/OT3.png";
 import ot4 from "../../assets/about/our-team/OT4.png";
 import ot5 from "../../assets/about/our-team/OT5.png";
 import ot6 from "../../assets/about/our-team/OT6.png";
-import ot7 from "../../assets/about/our-team/OT7.png";
+import ot7 from "../../assets/about/our-team/OT7.jpeg";
+import ot8 from "../../assets/about/our-team/OT8.jpeg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
@@ -61,11 +62,18 @@ const OurTeamM = () => {
     },
     {
       image: ot7,
-      position: "",
+      position: "Internal Sales Engineer",
       name: "Oladipupo Iyiola",
       mal: "oladipupo.iyiola@sitogglobal.com",
       phone: "0905 141 1840",
     },
+    {
+      image: ot8,
+      position: "Technical Sales Engineer",
+      name: "Esomeonu Everistus",
+      mal: ' everistus.esomeonu@sitogglobal.com',
+      phone: '0907 277 7749',
+        },
   ];
 
   const [visibleCount, setVisibleCount] = useState(3);

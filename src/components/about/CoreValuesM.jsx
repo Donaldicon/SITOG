@@ -15,7 +15,7 @@ const CoreValuesM = () => {
             className='rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl h-[730px] otherPhones:h-[650px] object-cover w-full object-center' 
             />
             <div 
-            className='absolute top-1/2 -translate-y-1/2 w-full flex flex-col items-center justify-center p-10 space-y-[10px] px-[4%] overflow-hidden'>
+            className='absolute top-1/2 -translate-y-1/2 w-full flex flex-col items-center justify-center p-10 space-y-[13px] px-[4%] overflow-hidden'>
                 {/* box 1 */}
                 <motion.div 
                 initial={{opacity:0, x:-50}}
@@ -24,7 +24,7 @@ const CoreValuesM = () => {
                 viewport={{once:true}}                    className="w-full"
                 >
                     <div 
-                    className='w-full border-white/50 border-[3px]  p-[0.5%] rounded-md '>
+                    className='w-full border-white/50 border-[3px] hover:scale-[1.05] transition-all duration-500 ease-in-out  p-[0.5%] rounded-md cursor-pointer'>
                         <div 
                         className='bg-[#FDCF17] h-[190px] otherPhones:h-[155px]   w-full flex flex-col relative rounded-md'>
                             <div 
@@ -60,9 +60,9 @@ const CoreValuesM = () => {
                 viewport={{once:true}}                    className="w-full"
                 >
                     <div 
-                    className='w-full border-white/50 border-[3px] p-[0.5%] rounded-md'>
+                    className='w-full border-white/50 border-[3px] hover:scale-[1.05] transition-all duration-500 ease-in-out p-[0.5%] rounded-md cursor-pointer'>
                         <div 
-                        className='bg-white h-[290px] otherPhones:h-[250px]  w-full flex flex-col relative rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
+                        className='bg-white h-[350px] smP:h-[290px]  phone:h-[290px]  otherPhones:h-[250px]  w-full flex flex-col relative rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
                             <div 
                             className='flex items-end justify-end'>
                                 <img 
@@ -99,7 +99,7 @@ const CoreValuesM = () => {
                 viewport={{once:true}}                    className="w-full"
                 >
                     <div 
-                    className='w-full border-white/50 border-[3px] p-[0.5%] rounded-md '>
+                    className='w-full border-white/50 border-[3px] hover:scale-[1.05] transition-all duration-500 ease-in-out p-[0.5%] rounded-md cursor-pointer'>
                         <div 
                         className='bg-[#FDCF17] h-[180px] otherPhones:h-[155px]  w-full flex flex-col relative rounded-md '>
                             <div 

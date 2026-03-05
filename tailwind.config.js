@@ -22,6 +22,7 @@ module.exports = {
     },
 
     screens: {
+      'smP': '325px',
       'phone': '420px',
       'otherPhones': '460px',
       'md': '768px',

@@ -49,7 +49,7 @@ const HeroM = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => prev + 1);
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
