@@ -69,8 +69,22 @@ const HeroM = () => {
     }
   }, [index]);
 
-  const [touchStart, setTouchStart] = useState(null);
+const [touchStart, setTouchStart] = useState(null);
 const [touchEnd, setTouchEnd] = useState(null);
+
+const nextSlide = () => {
+  setIndex((prev) => {
+    if (prev >= slides.length - 1) return prev;
+    return prev + 1;
+  });
+};
+
+const prevSlide = () => {
+  setIndex((prev) => {
+    if (prev <= 0) return prev;
+    return prev - 1;
+  });
+};
 
 const minSwipeDistance = 50;
 
@@ -98,6 +112,8 @@ const onTouchEnd = () => {
   if (isRightSwipe) {
     prevSlide();
   }
+  setTouchStart(null);
+  setTouchEnd(null);
 };
 
   return (
