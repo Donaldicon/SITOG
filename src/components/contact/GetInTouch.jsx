@@ -45,50 +45,65 @@ const GetInTouch = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    const validationErrors = validate();
+  const validationErrors = validate();
 
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
 
-    setErrors({});
-    setSending(true);
+  setErrors({});
+  setSending(true);
 
-    emailjs
-      .send(
-        "service_2ccd41l",
-        "template_kgwm4b7",
-        {
-          fullName: form.fullName,
-          email: form.email,
-          subject: form.subject,
-          message: form.message,
-        },
-        "pN00vDhRGlOmpOdc1"
-      )
-.then(() => {
+  const templateParams = {
+    fullName: form.fullName,
+    email: form.email,
+    subject: form.subject,
+    message: form.message,
+  };
+
+  try {
+    // Send email to admin
+    await emailjs.send(
+      "service_2ccd41l",
+      "template_kgwm4b7",
+      templateParams,
+      "pN00vDhRGlOmpOdc1"
+    );
+
+    // Try auto reply separately
+    emailjs.send(
+      "service_2ccd41l",
+      "template_AUTOREPLY_ID",
+      templateParams,
+      "pN00vDhRGlOmpOdc1"
+    ).catch((err) => {
+      console.log("Auto reply failed:", err);
+    });
+
+    setSuccess(true);
+
+    setForm({
+      fullName: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+
+  } catch (error) {
+    alert("Failed to send message. Please try again.");
+  }
+
   setSending(false);
-  setSuccess(true);
-
-
-  setForm({
-    fullName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
 
   setTimeout(() => setSuccess(false), 4000);
-})
-      .catch(() => {
-        setSending(false);
-        alert("Failed to send message. Please try again.");
-      });
-  };
+};
+
+  
+
 
   return (
     <div className='bg-[#F3F4F5] h-[450px] lg:h-[480px] laptop:h-[610px] big:h-[780px] w-[49%] px-[2%] my-auto flex flex-col justify-center rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
