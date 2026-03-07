@@ -69,9 +69,44 @@ const HeroM = () => {
     }
   }, [index]);
 
+  const [touchStart, setTouchStart] = useState(null);
+const [touchEnd, setTouchEnd] = useState(null);
+
+const minSwipeDistance = 50;
+
+const onTouchStart = (e) => {
+  setTouchEnd(null);
+  setTouchStart(e.targetTouches[0].clientX);
+};
+
+const onTouchMove = (e) => {
+  setTouchEnd(e.targetTouches[0].clientX);
+};
+
+const onTouchEnd = () => {
+  if (!touchStart || !touchEnd) return;
+
+  const distance = touchStart - touchEnd;
+
+  const isLeftSwipe = distance > minSwipeDistance;
+  const isRightSwipe = distance < -minSwipeDistance;
+
+  if (isLeftSwipe) {
+    nextSlide();
+  }
+
+  if (isRightSwipe) {
+    prevSlide();
+  }
+};
+
   return (
     <div 
-    className="overflow-hidden md:hidden w-full rounded-md h-[500px] relative">
+    className="overflow-hidden md:hidden w-full rounded-md h-[500px] relative"
+    onTouchStart={onTouchStart}
+    onTouchMove={onTouchMove}
+    onTouchEnd={onTouchEnd}
+    >
       
       <div
         className={`flex ${
