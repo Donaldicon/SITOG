@@ -6,6 +6,9 @@ const GetInTouch = () => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
+    phone: "",
+    company: "",
+    address: "",
     subject: "",
     message: "",
   });
@@ -27,6 +30,18 @@ const GetInTouch = () => {
       newErrors.email = "Enter a valid email address";
     }
 
+    if (!form.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    }
+
+    if (!form.company.trim()) {
+      newErrors.company = "Company name is required";
+    }
+
+    if (!form.address.trim()) {
+      newErrors.address = "Address is required";
+    }
+
     if (!form.subject.trim()) {
       newErrors.subject = "Subject is required";
     }
@@ -45,68 +60,69 @@ const GetInTouch = () => {
     });
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const validationErrors = validate();
+    const validationErrors = validate();
 
-  if (Object.keys(validationErrors).length > 0) {
-    setErrors(validationErrors);
-    return;
-  }
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
 
-  setErrors({});
-  setSending(true);
+    setErrors({});
+    setSending(true);
 
-  const templateParams = {
-    fullName: form.fullName,
-    email: form.email,
-    subject: form.subject,
-    message: form.message,
+    const templateParams = {
+      fullName: form.fullName,
+      email: form.email,
+      phone: form.phone,
+      company: form.company,
+      address: form.address,
+      subject: form.subject,
+      message: form.message,
+    };
+
+    try {
+      await emailjs.send(
+        "service_2ccd41l",
+        "template_kgwm4b7",
+        templateParams,
+        "pN00vDhRGlOmpOdc1"
+      );
+
+      emailjs.send(
+        "service_2ccd41l",
+        "template_AUTOREPLY_ID",
+        templateParams,
+        "pN00vDhRGlOmpOdc1"
+      ).catch((err) => {
+        console.log("Auto reply failed:", err);
+      });
+
+      setSuccess(true);
+
+      setForm({
+        fullName: "",
+        email: "",
+        phone: "",
+        company: "",
+        address: "",
+        subject: "",
+        message: "",
+      });
+
+    } catch (error) {
+      alert("Failed to send message. Please try again.");
+    }
+
+    setSending(false);
+
+    setTimeout(() => setSuccess(false), 4000);
   };
 
-  try {
-    // Send email to admin
-    await emailjs.send(
-      "service_2ccd41l",
-      "template_kgwm4b7",
-      templateParams,
-      "pN00vDhRGlOmpOdc1"
-    );
-
-    // Try auto reply separately
-    emailjs.send(
-      "service_2ccd41l",
-      "template_AUTOREPLY_ID",
-      templateParams,
-      "pN00vDhRGlOmpOdc1"
-    ).catch((err) => {
-      console.log("Auto reply failed:", err);
-    });
-
-    setSuccess(true);
-
-    setForm({
-      fullName: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-
-  } catch (error) {
-    alert("Failed to send message. Please try again.");
-  }
-
-  setSending(false);
-
-  setTimeout(() => setSuccess(false), 4000);
-};
-
-  
-
-
   return (
-    <div className='bg-[#F3F4F5] h-[450px] lg:h-[480px] laptop:h-[610px] big:h-[780px] w-[49%] px-[2%] my-auto flex flex-col justify-center rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl'>
+    <div className='bg-[#F3F4F5] py-[10px] lg:py-[13px] laptop:py-[25px] big:py-[28px] w-[49%] px-[2%] my-auto flex flex-col justify-center rounded-md lg:rounded-lg laptop:rounded-xl big:rounded-2xl font-hind'>
       
       <h1 className='text-[28px] leading-[40px] md:text-[18px] lg:text-[24px] md:leading-[24px] lg:leading-[32px] laptop:leading-[40px] laptop:text-[32px] big:text-[38px] big:leading-[50px] text-[#4C4E54] font-halyard'>
         Get In Touch
@@ -154,6 +170,51 @@ const handleSubmit = async (e) => {
           )}
         </div>
 
+        {/* Phone */}
+        <div>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={form.phone}
+            onChange={handleChange}
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none"
+          />
+          {errors.phone && (
+            <p className="text-red-500 mt-1 laptop:mt-[6px] pl-[2%]">{errors.phone}</p>
+          )}
+        </div>
+
+        {/* Company */}
+        <div>
+          <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            value={form.company}
+            onChange={handleChange}
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none"
+          />
+          {errors.company && (
+            <p className="text-red-500 mt-1 laptop:mt-[6px] pl-[2%]">{errors.company}</p>
+          )}
+        </div>
+
+        {/* Address */}
+        <div>
+          <input
+            type="text"
+            name="address"
+            placeholder="Address"
+            value={form.address}
+            onChange={handleChange}
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none"
+          />
+          {errors.address && (
+            <p className="text-red-500 mt-1 laptop:mt-[6px] pl-[2%]">{errors.address}</p>
+          )}
+        </div>
+
         {/* Subject */}
         <div>
           <input
@@ -189,7 +250,7 @@ const handleSubmit = async (e) => {
         <button
           type="submit"
           disabled={sending}
-          className="w-full bg-[#E6BC15] hover:bg-[#af8a04] transition-all duration-500 ease-in-out  text-[#3A3B40] py-3 rounded-lg font-medium  disabled:opacity-60"
+          className="w-full bg-[#E6BC15] hover:bg-[#af8a04] transition-all duration-500 ease-in-out text-[#3A3B40] py-3 rounded-lg font-medium disabled:opacity-60"
         >
           {sending ? "Sending..." : "Send Message"}
         </button>

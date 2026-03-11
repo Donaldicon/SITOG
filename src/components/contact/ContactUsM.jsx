@@ -38,7 +38,8 @@ const ContactUsM = () => {
 
                         <Link 
                         to='tel:+234-903-422-4789'
-                        target='_blank'>
+                        target='_blank'
+                        className="block">
                             0903-422-4789
                         </Link>
                         <Link 

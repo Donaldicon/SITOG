@@ -6,6 +6,9 @@ const GetInTouchM = () => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
+    phone: "",
+    company: "",
+    address: "",
     subject: "",
     message: "",
   });
@@ -25,6 +28,18 @@ const GetInTouchM = () => {
       newErrors.email = "Email is required";
     } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
       newErrors.email = "Enter a valid email address";
+    }
+
+    if (!form.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    }
+
+    if (!form.company.trim()) {
+      newErrors.company = "Company name is required";
+    }
+
+    if (!form.address.trim()) {
+      newErrors.address = "Address is required";
     }
 
     if (!form.subject.trim()) {
@@ -61,12 +76,14 @@ const handleSubmit = async (e) => {
   const templateParams = {
     fullName: form.fullName,
     email: form.email,
+    phone: form.phone,
+    company: form.company,
+    address: form.address,
     subject: form.subject,
     message: form.message,
   };
 
   try {
-    // Send email to admin
     await emailjs.send(
       "service_2ccd41l",
       "template_kgwm4b7",
@@ -74,7 +91,6 @@ const handleSubmit = async (e) => {
       "pN00vDhRGlOmpOdc1"
     );
 
-    // Try auto reply separately
     emailjs.send(
       "service_2ccd41l",
       "template_AUTOREPLY_ID",
@@ -89,6 +105,9 @@ const handleSubmit = async (e) => {
     setForm({
       fullName: "",
       email: "",
+      phone: "",
+      company: "",
+      address: "",
       subject: "",
       message: "",
     });
@@ -103,13 +122,13 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <div className='bg-[#F3F4F5] h-[480px] w-full px-[2%]  flex flex-col justify-center rounded-md mt-[15px]'>
-      
+    <div className='bg-[#F3F4F5] py-[12px] w-full px-[2%] flex flex-col justify-center rounded-md mt-[15px]'>
+
       <h1 className='text-[25px] font-bold text-[#4C4E54] font-halyard'>
         Get In Touch
       </h1>
 
-      <p className='text-[#63646C] text-[12px] font-hind font-medium my-[6px] '>
+      <p className='text-[#63646C] text-[12px] font-hind font-medium my-[6px]'>
         Share details of your project or technical requirements, and our team will get back to you.
       </p>
 
@@ -119,7 +138,7 @@ const handleSubmit = async (e) => {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-[8px] text-[12px]  placeholder:text-[8px] font-medium font-hind">
+      <form onSubmit={handleSubmit} className="space-y-[8px] text-[12px] placeholder:text-[8px] font-medium font-hind">
 
         {/* Full Name */}
         <div>
@@ -132,7 +151,7 @@ const handleSubmit = async (e) => {
             className="w-full border rounded-lg px-3 py-2 focus:outline-none"
           />
           {errors.fullName && (
-            <p className="text-red-500 mt-1 laptop:mt-[6px] pl-[2%]">{errors.fullName}</p>
+            <p className="text-red-500 mt-1 pl-[2%]">{errors.fullName}</p>
           )}
         </div>
 
@@ -147,7 +166,52 @@ const handleSubmit = async (e) => {
             className="w-full border rounded-lg px-3 py-2 focus:outline-none"
           />
           {errors.email && (
-            <p className="text-red-500 mt-1 laptop:mt-[6px] pl-[2%]">{errors.email}</p>
+            <p className="text-red-500 mt-1 pl-[2%]">{errors.email}</p>
+          )}
+        </div>
+
+        {/* Phone */}
+        <div>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={form.phone}
+            onChange={handleChange}
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none"
+          />
+          {errors.phone && (
+            <p className="text-red-500 mt-1 pl-[2%]">{errors.phone}</p>
+          )}
+        </div>
+
+        {/* Company */}
+        <div>
+          <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            value={form.company}
+            onChange={handleChange}
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none"
+          />
+          {errors.company && (
+            <p className="text-red-500 mt-1 pl-[2%]">{errors.company}</p>
+          )}
+        </div>
+
+        {/* Address */}
+        <div>
+          <input
+            type="text"
+            name="address"
+            placeholder="Address"
+            value={form.address}
+            onChange={handleChange}
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none"
+          />
+          {errors.address && (
+            <p className="text-red-500 mt-1 pl-[2%]">{errors.address}</p>
           )}
         </div>
 
@@ -162,7 +226,7 @@ const handleSubmit = async (e) => {
             className="w-full border rounded-lg px-3 py-2 focus:outline-none"
           />
           {errors.subject && (
-            <p className="text-red-500 mt-1 laptop:mt-[6px] pl-[2%]">{errors.subject}</p>
+            <p className="text-red-500 mt-1 pl-[2%]">{errors.subject}</p>
           )}
         </div>
 
@@ -178,7 +242,7 @@ const handleSubmit = async (e) => {
           ></textarea>
 
           {errors.message && (
-            <p className="text-red-500 mt-1 laptop:mt-[6px] pl-[2%]">{errors.message}</p>
+            <p className="text-red-500 mt-1 pl-[2%]">{errors.message}</p>
           )}
         </div>
 
@@ -186,7 +250,7 @@ const handleSubmit = async (e) => {
         <button
           type="submit"
           disabled={sending}
-          className="w-full bg-[#E6BC15] hover:bg-[#af8a04] transition-all duration-500 ease-in-out  text-[#3A3B40] py-3 rounded-lg font-medium disabled:opacity-60"
+          className="w-full bg-[#E6BC15] hover:bg-[#af8a04] transition-all duration-500 ease-in-out text-[#3A3B40] py-3 rounded-lg font-medium disabled:opacity-60"
         >
           {sending ? "Sending..." : "Send Message"}
         </button>
