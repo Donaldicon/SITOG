@@ -3,11 +3,12 @@ import { useState } from 'react'
 import ot1 from '../../assets/about/our-team/OT1.png'
 import ot2 from '../../assets/about/our-team/OT2.png'
 import ot3 from '../../assets/about/our-team/OT3.png'
-import ot4 from '../../assets/about/our-team/OT4.png'
-import ot5 from '../../assets/about/our-team/OT5.png'
+import ot4 from '../../assets/about/our-team/OT4.jpeg'
+import ot5 from '../../assets/about/our-team/OT5.jpeg'
 import ot6 from '../../assets/about/our-team/OT6.png'
 import ot7 from '../../assets/about/our-team/OT7.jpeg'
 import ot8 from '../../assets/about/our-team/OT8.jpeg'
+import ot9 from '../../assets/about/our-team/OT9.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft'
@@ -83,7 +84,14 @@ const OurTeamCarousel = () => {
         mal: ' everistus.esomeonu@sitogglobal.com',
         phone: '09072777749',
         },
-
+        
+        {
+        image: ot9,
+        position: "Technical Sales Engineer",
+        name: "Oluwaseun Ajayi",
+        mal: 'oluwaseun.ajayi@sitogglobal.com',
+        phone: '09034224789',
+        },
 
     ];
 
