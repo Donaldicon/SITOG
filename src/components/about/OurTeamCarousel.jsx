@@ -24,7 +24,7 @@ const OurTeamCarousel = () => {
         {
         image: ot1,
         position: "Executive Director",
-        name: "Ajayi Grace",
+        name: "Dr. Ajayi Grace",
         mal: 'info@sitogglobal.com',
         phone: '0803 236 0188',
         },
@@ -34,7 +34,7 @@ const OurTeamCarousel = () => {
         position: "HR/ Admin Manager",
         name: "Adesanwo Precious",
         mal: 'HR@sitogglobal.com ',
-        phone: '0909 775 3381',
+        phone: '0913 452 6004',
         },
 
         {
@@ -61,13 +61,7 @@ const OurTeamCarousel = () => {
         phone: '0913 740 8480',
         },
         
-        {
-        image: ot6,
-        position: "Internal Sales Engineer",
-        name: "Pesilade Lucky",
-        mal: 'pesilade.lucky@sitogglobal.com',
-        phone: ' 0704 740 9321',
-        },
+
         
         {
         image: ot7,
@@ -91,6 +85,13 @@ const OurTeamCarousel = () => {
         name: "Oluwaseun Ajayi",
         mal: 'oluwaseun.ajayi@sitogglobal.com',
         phone: '09034224789',
+        },
+                {
+        image: ot6,
+        position: "Internal Sales Engineer",
+        name: "Pesilade Lucky",
+        mal: 'pesilade.lucky@sitogglobal.com',
+        phone: ' 0704 740 9321',
         },
 
     ];
