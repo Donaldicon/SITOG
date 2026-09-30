@@ -53,23 +53,23 @@ const OurTeamCarousel = () => {
         phone: ' 0703 012 5547',
         },
         
-        {
-        image: ot5,
-        position: "External Sales Engineer",
-        name: "Andre Amanze",
-        mal: 'andre.amanze@sitogglobal.com',
-        phone: '0913 740 8480',
-        },
+        // {
+        // image: ot5,
+        // position: "External Sales Engineer",
+        // name: "Andre Amanze",
+        // mal: 'andre.amanze@sitogglobal.com',
+        // phone: '0913 740 8480',
+        // },
         
 
         
-        {
-        image: ot7,
-        position: "Internal Sales Engineer",
-        name: "Oladipupo Iyiola",
-        mal: ' oladipupo.iyiola@sitogglobal.com',
-        phone: '0905 141 1840',
-        },
+        // {
+        // image: ot7,
+        // position: "Internal Sales Engineer",
+        // name: "Oladipupo Iyiola",
+        // mal: ' oladipupo.iyiola@sitogglobal.com',
+        // phone: '0905 141 1840',
+        // },
         
         {
         image: ot8,
@@ -79,13 +79,13 @@ const OurTeamCarousel = () => {
         phone: '09072777749',
         },
         
-        {
-        image: ot9,
-        position: "Technical Sales Engineer",
-        name: "Oluwaseun Ajayi",
-        mal: 'oluwaseun.ajayi@sitogglobal.com',
-        phone: '09034224789',
-        },
+        // {
+        // image: ot9,
+        // position: "Technical Sales Engineer",
+        // name: "Oluwaseun Ajayi",
+        // mal: 'oluwaseun.ajayi@sitogglobal.com',
+        // phone: '09034224789',
+        // },
                 {
         image: ot6,
         position: "Internal Sales Engineer",
