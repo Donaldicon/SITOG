@@ -9,6 +9,7 @@ import ot6 from '../../assets/about/our-team/OT6.png'
 import ot7 from '../../assets/about/our-team/OT7.jpeg'
 import ot8 from '../../assets/about/our-team/OT8.jpeg'
 import ot9 from '../../assets/about/our-team/OT9.jpeg'
+import nopic from '../../assets/about/our-team/nopic.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft'
@@ -22,9 +23,9 @@ import { Link } from "react-router-dom"
 const OurTeamCarousel = () => {
     const slides = [
         {
-        image: ot1,
+        image: nopic,
         position: "Executive Director",
-        name: "Dr. Ajayi Grace",
+        name: "Shalom Ajayi",
         mal: 'info@sitogglobal.com',
         phone: '0803 236 0188',
         },
