@@ -10,6 +10,13 @@ import ot7 from '../../assets/about/our-team/OT7.jpeg'
 import ot8 from '../../assets/about/our-team/OT8.jpeg'
 import ot9 from '../../assets/about/our-team/OT9.jpeg'
 import nopic from '../../assets/about/our-team/nopic.png'
+import esomeonu from '../../assets/about/our-team/esomeonu_pfp.png'
+import jeremiah from '../../assets/about/our-team/jeremiah_pfp.jpeg'
+import lucky from '../../assets/about/our-team/lucky.jpeg'
+import gloria from '../../assets/about/our-team/gloria.jpeg'
+import cornelius from '../../assets/about/our-team/cornelius.jpeg'
+import oladimeji from '../../assets/about/our-team/oladimeji.jpeg'
+import precious from '../../assets/about/our-team/precious.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft'
@@ -31,16 +38,16 @@ const OurTeamCarousel = () => {
         },
 
         {
-        image: ot2,
-        position: "HR/ Admin Manager",
-        name: "Adesanwo Precious",
+        image: precious,
+        position: "Human Resources Manager",
+        name: "Precious Adesanwo",
         mal: 'HR@sitogglobal.com ',
         phone: '0913 452 6004',
         },
 
         {
-        image: ot3,
-        position: "Team Lead (Engineering & Sales)",
+        image: jeremiah,
+        position: "External Sales Engineer (Sales Team Lead)",
         name: "Jeremiah Madibuke",
         mal: 'jeremiah.madibuke@sitogglobal.com',
         phone: '0812 505 3956',
@@ -73,11 +80,11 @@ const OurTeamCarousel = () => {
         // },
         
         {
-        image: ot8,
-        position: "Technical Sales Engineer",
+        image: esomeonu,
+        position: "External Sales Engineer",
         name: "Esomeonu Everistus",
         mal: ' everistus.esomeonu@sitogglobal.com',
-        phone: '09072777749',
+        phone: '0907 277 7749',
         },
         
         // {
@@ -87,12 +94,36 @@ const OurTeamCarousel = () => {
         // mal: 'oluwaseun.ajayi@sitogglobal.com',
         // phone: '09034224789',
         // },
-                {
-        image: ot6,
+        {
+        image: lucky,
         position: "Internal Sales Engineer",
         name: "Pesilade Lucky",
         mal: 'pesilade.lucky@sitogglobal.com',
-        phone: ' 0704 740 9321',
+        phone: '0704 740 9321',
+        },
+
+        {
+        image: gloria,
+        position: "Account Officer",
+        name: "Gloria Oyetunde",
+        mal: 'gloria.oyetunde@sitogglobal.com',
+        phone: '-',
+        },
+
+        {
+        image: cornelius,
+        position: "External Sales Officer",
+        name: "Cornelius Okafor",
+        mal: ' cornelius.okafor@sitogglobal.com',
+        phone: '0913 740 8480',
+        },
+
+        {
+        image: oladimeji,
+        position: "Internal Sales Engineer",
+        name: "Oladimeji Isaiah Temitope",
+        mal: 'temitope.oladimeji@sitogglobal.com',
+        phone: '0905 141 1840',
         },
 
     ];
