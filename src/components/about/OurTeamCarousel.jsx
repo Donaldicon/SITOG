@@ -113,16 +113,16 @@ const OurTeamCarousel = () => {
         image: cornelius,
         position: "External Sales Officer",
         name: "Cornelius Okafor",
-        mal: 'cornelius.okafor@sitogglobal.com',
-        phone: '-',
+        mal: ' cornelius.okafor@sitogglobal.com',
+        phone: '0913 740 8480',
         },
 
         {
         image: oladimeji,
         position: "Internal Sales Engineer",
         name: "Oladimeji Isaiah Temitope",
-        mal: '-',
-        phone: '-',
+        mal: 'temitope.oladimeji@sitogglobal.com',
+        phone: '0905 141 1840',
         },
 
     ];
