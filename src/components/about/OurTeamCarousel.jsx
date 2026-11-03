@@ -16,6 +16,7 @@ import lucky from '../../assets/about/our-team/lucky.jpeg'
 import gloria from '../../assets/about/our-team/gloria.jpeg'
 import cornelius from '../../assets/about/our-team/cornelius.jpeg'
 import oladimeji from '../../assets/about/our-team/oladimeji.jpeg'
+import precious from '../../assets/about/our-team/precious.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft'
@@ -37,9 +38,9 @@ const OurTeamCarousel = () => {
         },
 
         {
-        image: ot2,
-        position: "HR/ Admin Manager",
-        name: "Adesanwo Precious",
+        image: precious,
+        position: "Human Resources Manager",
+        name: "Precious Adesanwo",
         mal: 'HR@sitogglobal.com ',
         phone: '0913 452 6004',
         },
