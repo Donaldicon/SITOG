@@ -17,6 +17,7 @@ import gloria from '../../assets/about/our-team/gloria.jpeg'
 import cornelius from '../../assets/about/our-team/cornelius.jpeg'
 import oladimeji from '../../assets/about/our-team/oladimeji.jpeg'
 import precious from '../../assets/about/our-team/precious.jpeg'
+import default_male from '../../assets/about/our-team/default_male.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft'
@@ -106,8 +107,8 @@ const OurTeamCarousel = () => {
         image: gloria,
         position: "Account Officer",
         name: "Gloria Oyetunde",
-        mal: 'gloria.oyetunde@sitogglobal.com',
-        phone: '-',
+        mal: 'finance@sitogglobal.com',
+        phone: '0805 449 9939',
         },
 
         {
@@ -124,6 +125,14 @@ const OurTeamCarousel = () => {
         name: "Oladimeji Isaiah Temitope",
         mal: 'temitope.oladimeji@sitogglobal.com',
         phone: '0905 141 1840',
+        },
+        
+        {
+        image: default_male,
+        position: "Technical Sales Engineer",
+        name: "Okonkwo Christopher",
+        mal: 'christopher.okonkwo@sitogglobal.com',
+        phone: '0903 422 4789',
         },
 
     ];
