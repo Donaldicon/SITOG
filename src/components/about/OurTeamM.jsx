@@ -18,6 +18,7 @@ import cornelius from '../../assets/about/our-team/cornelius.jpeg'
 import oladimeji from '../../assets/about/our-team/oladimeji.jpeg'
 import precious from '../../assets/about/our-team/precious.jpeg'
 import default_male from '../../assets/about/our-team/default_male.png'
+import okonkwo from '../../assets/about/our-team/okonkwo.jpeg'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
@@ -54,9 +55,9 @@ const OurTeamM = () => {
           
           {
           image: ot4,
-          position: "Accounting Officer",
+          position: "Logistics Executive",
           name: "Samuel Ogbole",
-          mal: 'samuel.ogbole@sitogglobal.com',
+          mal: 'logistics@sitogglobal.com',
           phone: ' 0703 012 5547',
           },
           
@@ -126,7 +127,7 @@ const OurTeamM = () => {
           },
 
           {
-          image: default_male,
+          image: okonkwo,
           position: "Technical Sales Engineer",
           name: "Okonkwo Christopher",
           mal: 'christopher.okonkwo@sitogglobal.com',
